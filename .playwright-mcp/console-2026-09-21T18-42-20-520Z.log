@@ -1,0 +1,17 @@
+[     239ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[     287ms] [LOG] [HMR] connected @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[  876521ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[  876831ms] [LOG] [Fast Refresh] done in 340ms @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[  889569ms] [LOG] [Fast Refresh] done in 340ms @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[  947610ms] [LOG] [Fast Refresh] done in 340ms @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[ 1000037ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=gVYkIBR4pJs1IEFPppXlr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[ 1001039ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=gVYkIBR4pJs1IEFPppXlr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[ 1002047ms] [LOG] [HMR] connected @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[ 1003255ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[ 1003287ms] [LOG] [HMR] connected @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[ 1015525ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[ 1015839ms] [LOG] [Fast Refresh] done in 415ms @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[ 1117435ms] [LOG] [HMR] connected @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[ 1343887ms] [LOG] [HMR] connected @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[ 1439389ms] [LOG] [HMR] connected @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[ 1590595ms] [LOG] [HMR] connected @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776

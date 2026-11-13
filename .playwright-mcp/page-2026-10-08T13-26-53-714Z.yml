@@ -1,0 +1,354 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - navigation [ref=f1e3]:
+      - link "hdl HDL Forge" [ref=f1e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e5]: hdl
+        - generic [ref=f1e6]: HDL Forge
+      - generic [ref=f1e7]:
+        - link "Learn" [ref=f1e8] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f1e9] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f1e10] [cursor=pointer]:
+          - /url: /about
+      - generic: …
+  - main [ref=f1e11]:
+    - generic [ref=f1e12]:
+      - paragraph [ref=f1e13]: Curriculum
+      - heading "Verilog Digital Design" [level=1] [ref=f1e14]
+      - paragraph [ref=f1e15]: 15 chapters, each with a full beginner learning guide you can read before you write a line of code, then split-screen micro-lessons, and finally an unguided problem set graded against a hidden testbench. Clear all 15 to unlock the certificate.
+      - generic [ref=f1e16]:
+        - generic [ref=f1e17]:
+          - 'link "Open Chapter 1: Synthesis Foundations" [ref=f1e18] [cursor=pointer]':
+            - /url: /learn/synthesis-foundations
+          - generic:
+            - generic: "01"
+            - generic:
+              - generic:
+                - heading "Synthesis Foundations" [level=2]
+                - generic: ~2 hrs
+              - paragraph: Bits, truth tables, and the compile-elaborate-simulate flow that every RTL design sits on.
+              - generic:
+                - generic: 1 · Bits, Vectors & Truth Tables
+                - generic: P-Set · Truth-Table Synthesizer
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 2 steps
+          - generic: Learn · 22 min
+          - link "Read the learning material →" [ref=f1e19] [cursor=pointer]:
+            - /url: /learn/synthesis-foundations/learn
+        - generic [ref=f1e20]:
+          - 'link "Open Chapter 2: Logic Gates" [ref=f1e21] [cursor=pointer]':
+            - /url: /learn/logic-gates
+          - generic:
+            - generic: "02"
+            - generic:
+              - generic:
+                - heading "Logic Gates" [level=2]
+                - generic: ~2 hrs
+              - paragraph: AND, OR, NOT, NAND, NOR, XOR, XNOR as continuous assignments and gate-level primitives.
+              - generic:
+                - generic: 1 · Gate Primitives & assign
+                - generic: P-Set · Gate Netlist Designer
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 2 steps
+          - generic: Learn · 20 min
+          - link "Read the learning material →" [ref=f1e22] [cursor=pointer]:
+            - /url: /learn/logic-gates/learn
+        - generic [ref=f1e23]:
+          - 'link "Open Chapter 3: Combinational Expressions" [ref=f1e24] [cursor=pointer]':
+            - /url: /learn/combinational-expressions
+          - generic:
+            - generic: "03"
+            - generic:
+              - generic:
+                - heading "Combinational Expressions" [level=2]
+                - generic: ~3 hrs
+              - paragraph: Operators, operator precedence, vectors, and structural vs. behaviorial modelling of pure logic.
+              - generic:
+                - generic: 1 · Operators & Precedence
+                - generic: 2 · Vector Slices & Concatenation
+                - generic: P-Set · Expression Evaluator
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 3 steps
+          - generic: Learn · 24 min
+          - link "Read the learning material →" [ref=f1e25] [cursor=pointer]:
+            - /url: /learn/combinational-expressions/learn
+        - generic [ref=f1e26]:
+          - 'link "Open Chapter 4: Multiplexers & Selectors" [ref=f1e27] [cursor=pointer]':
+            - /url: /learn/multiplexers
+          - generic:
+            - generic: "04"
+            - generic:
+              - generic:
+                - heading "Multiplexers & Selectors" [level=2]
+                - generic: ~2 hrs
+              - paragraph: MUX-2, MUX-4, wide busses, ternary operators, and MUX-based universality.
+              - generic:
+                - generic: 1 · MUX Circuits
+                - generic: P-Set · Feature Selector
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 2 steps
+          - generic: Learn · 21 min
+          - link "Read the learning material →" [ref=f1e28] [cursor=pointer]:
+            - /url: /learn/multiplexers/learn
+        - generic [ref=f1e29]:
+          - 'link "Open Chapter 5: Adder Circuits" [ref=f1e30] [cursor=pointer]':
+            - /url: /learn/adders
+          - generic:
+            - generic: "05"
+            - generic:
+              - generic:
+                - heading "Adder Circuits" [level=2]
+                - generic: ~3 hrs
+              - paragraph: Half adder, full adder, ripple-carry, carry-lookahead, and parameterized adders.
+              - generic:
+                - generic: 1 · Half & Full Adder
+                - generic: 2 · Ripple-Carry Adder
+                - generic: P-Set · Nibble Adder RTL + TB
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 3 steps
+          - generic: Learn · 25 min
+          - link "Read the learning material →" [ref=f1e31] [cursor=pointer]:
+            - /url: /learn/adders/learn
+        - generic [ref=f1e32]:
+          - 'link "Open Chapter 6: Number Systems & Arithmetic" [ref=f1e33] [cursor=pointer]':
+            - /url: /learn/arithmetic
+          - generic:
+            - generic: "06"
+            - generic:
+              - generic:
+                - heading "Number Systems & Arithmetic" [level=2]
+                - generic: ~3 hrs
+              - paragraph: Two's complement, subtractors, comparators, and sign handling in RTL.
+              - generic:
+                - generic: 1 · Two's Complement
+                - generic: P-Set · Signed Comparator
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 2 steps
+          - generic: Learn · 24 min
+          - link "Read the learning material →" [ref=f1e34] [cursor=pointer]:
+            - /url: /learn/arithmetic/learn
+        - generic [ref=f1e35]:
+          - 'link "Open Chapter 7: Encoders, Decoders & Priority" [ref=f1e36] [cursor=pointer]':
+            - /url: /learn/encode-decode
+          - generic:
+            - generic: "07"
+            - generic:
+              - generic:
+                - heading "Encoders, Decoders & Priority" [level=2]
+                - generic: ~2 hrs
+              - paragraph: Binary decoders, priority encoders, casez, and one-hot control logic.
+              - generic:
+                - generic: 1 · Priority Encoder
+                - generic: P-Set · Interrupt Priority Unit
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 2 steps
+          - generic: Learn · 24 min
+          - link "Read the learning material →" [ref=f1e37] [cursor=pointer]:
+            - /url: /learn/encode-decode/learn
+        - generic [ref=f1e38]:
+          - 'link "Open Chapter 8: Sequential Fundamentals" [ref=f1e39] [cursor=pointer]':
+            - /url: /learn/sequential-fundamentals
+          - generic:
+            - generic: "08"
+            - generic:
+              - generic:
+                - heading "Sequential Fundamentals" [level=2]
+                - generic: ~3 hrs
+              - paragraph: D latch vs. flip-flop, always blocks, resets, and clocking discipline.
+              - generic:
+                - generic: 1 · Flip-Flops & Resets
+                - generic: P-Set · Two-Flip-Flop Synchronizer
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 2 steps
+          - generic: Learn · 27 min
+          - link "Read the learning material →" [ref=f1e40] [cursor=pointer]:
+            - /url: /learn/sequential-fundamentals/learn
+        - generic [ref=f1e41]:
+          - 'link "Open Chapter 9: Counters & Dividers" [ref=f1e42] [cursor=pointer]':
+            - /url: /learn/counters
+          - generic:
+            - generic: "09"
+            - generic:
+              - generic:
+                - heading "Counters & Dividers" [level=2]
+                - generic: ~3 hrs
+              - paragraph: Up/down counters, modulus counters, prescalers, and clock division.
+              - generic:
+                - generic: 1 · Modulo-N Counter
+                - generic: P-Set · Clock Divider
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 2 steps
+          - generic: Learn · 25 min
+          - link "Read the learning material →" [ref=f1e43] [cursor=pointer]:
+            - /url: /learn/counters/learn
+        - generic [ref=f1e44]:
+          - 'link "Open Chapter 10: Shift Registers" [ref=f1e45] [cursor=pointer]':
+            - /url: /learn/shift-registers
+          - generic:
+            - generic: "10"
+            - generic:
+              - generic:
+                - heading "Shift Registers" [level=2]
+                - generic: ~2 hrs
+              - paragraph: SISO / SIPO / PIPO, barrel shifters, and serialization patterns.
+              - generic:
+                - generic: 1 · The Shifter Family
+                - generic: P-Set · Rotating Barrel Shifter
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 2 steps
+          - generic: Learn · 25 min
+          - link "Read the learning material →" [ref=f1e46] [cursor=pointer]:
+            - /url: /learn/shift-registers/learn
+        - generic [ref=f1e47]:
+          - 'link "Open Chapter 11: Finite State Machines" [ref=f1e48] [cursor=pointer]':
+            - /url: /learn/finite-state-machines
+          - generic:
+            - generic: "11"
+            - generic:
+              - generic:
+                - heading "Finite State Machines" [level=2]
+                - generic: ~4 hrs
+              - paragraph: Mealy vs. Moore, state encoding, safe FSM (defaults), and one-hot design.
+              - generic:
+                - generic: 1 · Mealy vs. Moore
+                - generic: 2 · Two-Paragraph FSM
+                - generic: P-Set · Traffic Light Controller
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 3 steps
+          - generic: Learn · 24 min
+          - link "Read the learning material →" [ref=f1e49] [cursor=pointer]:
+            - /url: /learn/finite-state-machines/learn
+        - generic [ref=f1e50]:
+          - 'link "Open Chapter 12: Datapath: ALUs & Registers" [ref=f1e51] [cursor=pointer]':
+            - /url: /learn/datapath
+          - generic:
+            - generic: "12"
+            - generic:
+              - generic:
+                - 'heading "Datapath: ALUs & Registers" [level=2]'
+                - generic: ~3 hrs
+              - paragraph: ALU function units, register files, and combining datapath with control.
+              - generic:
+                - generic: 1 · Build an 8-bit ALU
+                - generic: P-Set · 4-Port Register File
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 2 steps
+          - generic: Learn · 24 min
+          - link "Read the learning material →" [ref=f1e52] [cursor=pointer]:
+            - /url: /learn/datapath/learn
+        - generic [ref=f1e53]:
+          - 'link "Open Chapter 13: Memory Blocks" [ref=f1e54] [cursor=pointer]':
+            - /url: /learn/memory
+          - generic:
+            - generic: "13"
+            - generic:
+              - generic:
+                - heading "Memory Blocks" [level=2]
+                - generic: ~3 hrs
+              - paragraph: ROM, single-port RAM, inferring vs. instantiating, and read-during-write rules.
+              - generic:
+                - generic: 1 · Single-Port RAM
+                - generic: P-Set · Boot ROM with Image
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 2 steps
+          - generic: Learn · 24 min
+          - link "Read the learning material →" [ref=f1e55] [cursor=pointer]:
+            - /url: /learn/memory/learn
+        - generic [ref=f1e56]:
+          - 'link "Open Chapter 14: Interfaces: UART" [ref=f1e57] [cursor=pointer]':
+            - /url: /learn/interfaces
+          - generic:
+            - generic: "14"
+            - generic:
+              - generic:
+                - 'heading "Interfaces: UART" [level=2]'
+                - generic: ~4 hrs
+              - paragraph: Byte framing, baud generation, TX/RX with start/stop bits, and modular I/O.
+              - generic:
+                - generic: 1 · UART Transmitter
+                - generic: 2 · UART Receiver
+                - generic: P-Set · UART Loopback Bridge
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 3 steps
+          - generic: Learn · 25 min
+          - link "Read the learning material →" [ref=f1e58] [cursor=pointer]:
+            - /url: /learn/interfaces/learn
+        - generic [ref=f1e59]:
+          - 'link "Open Chapter 15: RISC-V Blocks" [ref=f1e60] [cursor=pointer]':
+            - /url: /learn/risc-v-blocks
+          - generic:
+            - generic: "15"
+            - generic:
+              - generic:
+                - heading "RISC-V Blocks" [level=2]
+                - generic: ~4 hrs
+              - paragraph: PC mux, ALU datapath slices, and the interface discipline of a pipelined core.
+              - generic:
+                - generic: 1 · PC & Immediate Datapath
+                - generic: P-Set · RISC-V Core Datapath
+              - generic:
+                - generic:
+                  - progressbar
+                - generic: 0% · not started
+                - generic: 2 steps
+          - generic: Learn · 25 min
+          - link "Read the learning material →" [ref=f1e61] [cursor=pointer]:
+            - /url: /learn/risc-v-blocks/learn
+  - contentinfo [ref=f1e62]:
+    - generic [ref=f1e63]:
+      - generic [ref=f1e64]:
+        - paragraph [ref=f1e65]: HDL Forge
+        - paragraph [ref=f1e66]: Learn Verilog in the browser. Practice with instant feedback. Prove it with a certificate.
+      - generic [ref=f1e67]:
+        - link "Learn" [ref=f1e68] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f1e69] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f1e70] [cursor=pointer]:
+          - /url: /about
+        - generic [ref=f1e71]: © 2026
+  - button "Open Next.js Dev Tools" [ref=f1e77] [cursor=pointer]

@@ -1,0 +1,86 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Back to chapter 5" [ref=e5] [cursor=pointer]:
+        - /url: /learn/adders
+        - text: ← Ch 5
+      - generic [ref=e7]: Ch 5 · Adder Circuits — Ripple-Carry Adder
+      - generic [ref=e8]:
+        - generic [ref=e9]: —
+        - button "Reset layout" [ref=e10]
+        - button "Run" [ref=e11]
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: Ripple-Carry Adder
+          - generic [ref=e17]: Chapter 5 · Step 2 of 3
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - heading "Objective" [level=3] [ref=e20]
+            - paragraph [ref=e21]: Chain full adders into a nibble adder with carry input/output, then generalize to any width.
+          - generic [ref=e22]:
+            - heading "Practice" [level=3] [ref=e23]
+            - list [ref=e24]:
+              - listitem [ref=e25]:
+                - checkbox [ref=e26]
+                - generic [ref=e27]: "Instantiate 4 full adders and chase the carry chain by hand for `4'b0011 + 4'b0101`."
+              - listitem [ref=e28]:
+                - checkbox [ref=e29]
+                - generic [ref=e30]: Add a carry-in and carry-out port to the nibble adder.
+              - listitem [ref=e31]:
+                - checkbox [ref=e32]
+                - generic [ref=e33]: "Parameterize the adder with `parameter N = 4` and verify 8- and 16-bit widths."
+              - listitem [ref=e34]:
+                - checkbox [ref=e35]
+                - generic [ref=e36]: Detect difference between carry-out and overflow by adding two positive values whose sum exceeds the width.
+            - paragraph [ref=e37]: Tick these off in your head (or in the editor) before the task — they are the priming exercises for the graded problem set.
+          - generic [ref=e38]:
+            - heading "Your task" [level=3] [ref=e39]
+            - paragraph [ref=e40]: Chain 4 full adders into a nibble adder with carry input/output.
+            - paragraph [ref=e41]:
+              - text: Implement the design in
+              - code [ref=e42]: top.sv
+              - text: in Verilog-2001. The compiler checks your code against Verilator right in the browser as you work.
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - button "top.sv" [ref=e48]
+          - button "top_tb.sv" [ref=e49]
+        - generic [ref=e50]: Loading editor…
+        - generic [ref=e54]:
+          - generic [ref=e55]: top.sv
+          - generic [ref=e56]: Ln 1, Col 1
+          - generic [ref=e57]: "Spaces: 2"
+          - generic [ref=e58]: UTF-8
+          - generic [ref=e59]: Idle
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]: Waveform
+          - generic [ref=e69]: VCD
+        - generic [ref=e70]:
+          - generic [ref=e72]:
+            - generic [ref=e73]: clk
+            - generic [ref=e75]: rst_n
+            - generic [ref=e77]:
+              - generic [ref=e78]: a
+              - generic [ref=e79]: "[3:0]"
+            - generic [ref=e80]:
+              - generic [ref=e81]: b
+              - generic [ref=e82]: "[3:0]"
+            - generic [ref=e83]:
+              - generic [ref=e84]: "y"
+              - generic [ref=e85]: "[3:0]"
+          - generic [ref=e87]: Press Run to compile your design with Verilator.
+        - generic [ref=e88]:
+          - generic [ref=e89]: Idle
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - generic [ref=e94]: Compile
+              - generic [ref=e95]: →
+            - generic [ref=e96]: Lint
+    - generic [ref=e98]:
+      - button "▶ Output Verilator 5.051 · lint-only" [expanded] [ref=e99]:
+        - generic [ref=e100]: ▶
+        - text: Output
+        - generic [ref=e101]: Verilator 5.051 · lint-only
+      - generic [ref=e102]: Press Run to compile your design with Verilator.
+  - button "Open Next.js Dev Tools" [ref=e109] [cursor=pointer]

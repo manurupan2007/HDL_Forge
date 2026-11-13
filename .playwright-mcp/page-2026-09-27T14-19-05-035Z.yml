@@ -1,0 +1,99 @@
+- generic [ref=f8e3]:
+  - banner [ref=f8e4]:
+    - link "Back to chapter 2" [ref=f8e5] [cursor=pointer]:
+      - /url: /learn/logic-gates
+      - text: ← Ch 2
+    - generic [ref=f8e7]: Ch 2 · Logic Gates — Gate Primitives & assign
+    - generic [ref=f8e8]:
+      - generic [ref=f8e9]: —
+      - button "Reset layout" [ref=f8e10]
+      - button "Check" [ref=f8e11]
+      - button "Run" [ref=f8e12]
+  - generic [ref=f8e13]:
+    - generic [ref=f8e15]:
+      - generic [ref=f8e16]:
+        - generic [ref=f8e17]: Gate Primitives & assign
+        - generic [ref=f8e18]: Chapter 2 · Step 1 of 2
+      - generic [ref=f8e19]:
+        - generic [ref=f8e20]:
+          - heading "Learn" [level=3] [ref=f8e21]
+          - paragraph [ref=f8e22]: "There are two ways to describe a gate in Verilog: an expression (`assign y = a & b;`) or a gate primitive (`and g(y, a, b);`). They synthesize to the same hardware — the choice is about how you want to think about the circuit."
+          - paragraph [ref=f8e23]: Dataflow modelling (assign) describes the Boolean equation; structural modelling (primitives) describes the gate instances and their wiring, with the output as the first port and inputs after. Because everything is built from NAND, any circuit you can draw as gates can be rebuilt with NANDs only — a classic proof of universality that you will physically verify.
+          - generic [ref=f8e24]:
+            - code [ref=f8e26]: "module top ( input wire a, input wire b, output wire y ); // Same function, two spellings: assign y = ~(a & b); // dataflow // nand g(y, a, b); // structural — same net endmodule"
+            - paragraph [ref=f8e27]: With gate primitives the output net must be declared before use, and Verilator warns with IMPLICIT if you forgot to declare a net it infers.
+          - list [ref=f8e28]:
+            - listitem [ref=f8e29]:
+              - generic [ref=f8e31]: "The NOT of AND is NAND, and NOT alone is `not` (built-in). A NOT made of NAND is `nand (y, i, i);` — both inputs tied together."
+            - listitem [ref=f8e32]:
+              - generic [ref=f8e34]: XOR built from four NANDs is a rite of passage; check every one of the four input rows in a truth table, not just two.
+            - listitem [ref=f8e35]:
+              - generic [ref=f8e37]: Unused output? Verilator says UNUSED. Input no one drives? UNDRIVEN. Both are info-level style notes here, not errors.
+        - generic [ref=f8e38]:
+          - heading "Objective" [level=3] [ref=f8e39]
+          - paragraph [ref=f8e40]: "Write combinational gates two ways — `assign` expressions and gate primitives — and derive any gate from NANDs."
+        - generic [ref=f8e41]:
+          - heading "Practice" [level=3] [ref=f8e42]
+          - list [ref=f8e43]:
+            - listitem [ref=f8e44]:
+              - checkbox [ref=f8e45]
+              - generic [ref=f8e46]: "Write `assign y = a & b;` and predict the truth table before compiling."
+            - listitem [ref=f8e47]:
+              - checkbox [ref=f8e48]
+              - generic [ref=f8e49]: "Express NAND two ways: `assign y = ~(a & b);` and `nand g(y, a, b);`."
+            - listitem [ref=f8e50]:
+              - checkbox [ref=f8e51]
+              - generic [ref=f8e52]: Build XOR from 4 NAND gates; verify all four input rows.
+            - listitem [ref=f8e53]:
+              - checkbox [ref=f8e54]
+              - generic [ref=f8e55]: Instantiate a gate primitive and watch the output net appear on the wire.
+          - paragraph [ref=f8e56]: Tick these off in your head (or in the editor) before the task — they are the priming exercises for the graded problem set.
+        - generic [ref=f8e57]:
+          - heading "Your task" [level=3] [ref=f8e58]
+          - paragraph [ref=f8e59]: Write a 2-input gate as a continuous assignment and as a primitive.
+          - paragraph [ref=f8e60]:
+            - text: Implement the design in
+            - code [ref=f8e61]: top.sv
+            - text: in Verilog-2001. The compiler checks your code against Verilator right in the browser as you work.
+    - generic [ref=f8e65]:
+      - generic [ref=f8e66]:
+        - button "top.sv" [ref=f8e67]
+        - button "top_tb.sv" [ref=f8e68]
+      - generic [ref=f8e69]: Loading editor…
+      - generic [ref=f8e73]:
+        - generic [ref=f8e74]: top.sv
+        - generic [ref=f8e75]: Ln 1, Col 1
+        - generic [ref=f8e76]: "Spaces: 2"
+        - generic [ref=f8e77]: UTF-8
+        - generic [ref=f8e78]: Idle
+    - generic [ref=f8e85]:
+      - generic [ref=f8e86]:
+        - generic [ref=f8e87]: Waveform
+        - generic [ref=f8e88]: VCD
+      - generic [ref=f8e89]:
+        - generic [ref=f8e91]:
+          - generic [ref=f8e92]: clk
+          - generic [ref=f8e94]: rst_n
+          - generic [ref=f8e96]:
+            - generic [ref=f8e97]: a
+            - generic [ref=f8e98]: "[3:0]"
+          - generic [ref=f8e99]:
+            - generic [ref=f8e100]: b
+            - generic [ref=f8e101]: "[3:0]"
+          - generic [ref=f8e102]:
+            - generic [ref=f8e103]: "y"
+            - generic [ref=f8e104]: "[3:0]"
+        - generic [ref=f8e106]: Press Run to compile your design with Verilator.
+      - generic [ref=f8e107]:
+        - generic [ref=f8e108]: Idle
+        - generic [ref=f8e111]:
+          - generic [ref=f8e112]:
+            - generic [ref=f8e113]: Compile
+            - generic [ref=f8e114]: →
+          - generic [ref=f8e115]: Lint
+  - generic [ref=f8e117]:
+    - button "▶" [expanded] [ref=f8e118]
+    - button "Checks" [ref=f8e120]
+    - button "Output" [ref=f8e121]
+    - text: Verilator 5.051 · lint-only
+    - generic [ref=f8e122]: Press Run to compile your design with Verilator.

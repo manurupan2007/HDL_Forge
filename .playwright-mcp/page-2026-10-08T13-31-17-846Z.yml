@@ -1,0 +1,37 @@
+- generic [active] [ref=f12e1]:
+  - button "Open Next.js Dev Tools" [ref=f12e7] [cursor=pointer]
+  - banner [ref=f12e11]:
+    - navigation [ref=f12e12]:
+      - link "hdl HDL Forge" [ref=f12e13] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f12e14]: hdl
+        - generic [ref=f12e15]: HDL Forge
+      - generic [ref=f12e16]:
+        - link "Learn" [ref=f12e17] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f12e18] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f12e19] [cursor=pointer]:
+          - /url: /about
+      - generic: …
+  - main [ref=f12e20]:
+    - generic [ref=f12e22]:
+      - paragraph [ref=f12e23]: "404"
+      - heading "Page not found" [level=1] [ref=f12e24]
+      - paragraph [ref=f12e25]: The page you are looking for does not exist.
+      - link "Back home" [ref=f12e26] [cursor=pointer]:
+        - /url: /
+  - contentinfo [ref=f12e27]:
+    - generic [ref=f12e28]:
+      - generic [ref=f12e29]:
+        - paragraph [ref=f12e30]: HDL Forge
+        - paragraph [ref=f12e31]: Learn Verilog in the browser. Practice with instant feedback. Prove it with a certificate.
+      - generic [ref=f12e32]:
+        - link "Learn" [ref=f12e33] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f12e34] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f12e35] [cursor=pointer]:
+          - /url: /about
+        - generic [ref=f12e36]: © 2026
+  - alert [ref=f12e37]

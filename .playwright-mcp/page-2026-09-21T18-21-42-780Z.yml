@@ -1,0 +1,116 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e3]:
+    - banner [ref=f1e4]:
+      - link "Back to chapter 11" [ref=f1e5] [cursor=pointer]:
+        - /url: /learn/finite-state-machines
+        - text: ← Ch 11
+      - generic [ref=f1e7]: Ch 11 · Finite State Machines — Two-Paragraph FSM
+      - generic [ref=f1e8]:
+        - generic [ref=f1e9]: 0.48s
+        - button "Reset layout" [ref=f1e10]
+        - button "Run" [ref=f1e11]
+    - generic [ref=f1e12]:
+      - generic [ref=f1e14]:
+        - generic [ref=f1e15]:
+          - generic [ref=f1e16]: Two-Paragraph FSM
+          - generic [ref=f1e17]: Chapter 11 · Step 2 of 3
+        - generic [ref=f1e18]:
+          - generic [ref=f1e19]:
+            - heading "Objective" [level=3] [ref=f1e20]
+            - paragraph [ref=f1e21]: "Split next-state logic from registered state into separate `always_comb` + `always_ff` blocks."
+          - generic [ref=f1e22]:
+            - heading "Practice" [level=3] [ref=f1e23]
+            - list [ref=f1e24]:
+              - listitem [ref=f1e25]:
+                - checkbox [ref=f1e26]
+                - generic [ref=f1e27]: "Rewrite your Moore FSM as two paragraphs: `always_comb` computes `next`, `always_ff` latches it."
+              - listitem [ref=f1e28]:
+                - checkbox [ref=f1e29]
+                - generic [ref=f1e30]: Move Mealy outputs into the combinational block and observe when they change vs registered outputs.
+              - listitem [ref=f1e31]:
+                - checkbox [ref=f1e32]
+                - generic [ref=f1e33]: "Add `timeunit 1ns / timeprecision 1ps` and verify timescale warnings disappear."
+              - listitem [ref=f1e34]:
+                - checkbox [ref=f1e35]
+                - generic [ref=f1e36]: "Switch one state variable to `enum` and confirm Verilator accepts it."
+            - paragraph [ref=f1e37]: Tick these off in your head (or in the editor) before the task — they are the priming exercises for the graded problem set.
+          - generic [ref=f1e38]:
+            - heading "Your task" [level=3] [ref=f1e39]
+            - paragraph [ref=f1e40]: Split next-state logic from output logic in separate always blocks.
+            - paragraph [ref=f1e41]:
+              - text: Implement the design in
+              - code [ref=f1e42]: top.sv
+              - text: in SystemVerilog. The compiler checks your code against Verilator right in the browser as you work.
+      - generic [ref=f1e46]:
+        - generic [ref=f1e47]:
+          - button "top.sv" [ref=f1e48]
+          - button "top_tb.sv" [ref=f1e49]
+        - code [ref=f1e114]:
+          - generic [ref=f1e115]:
+            - textbox "Verilog source editor"
+            - textbox [ref=f1e116]
+            - generic [ref=f1e118]:
+              - generic [ref=f1e119]:
+                - generic [ref=f1e121] [cursor=pointer]: 
+                - generic [ref=f1e122]: "1"
+              - generic [ref=f1e123]: "2"
+              - generic [ref=f1e125]: "3"
+              - generic [ref=f1e127]: "4"
+              - generic [ref=f1e129]:
+                - generic [ref=f1e130] [cursor=pointer]: 
+                - generic [ref=f1e131]: "5"
+              - generic [ref=f1e132]: "6"
+              - generic [ref=f1e134]: "7"
+              - generic [ref=f1e136]: "8"
+              - generic [ref=f1e138]: "9"
+              - generic [ref=f1e140]: "10"
+            - generic [ref=f1e160]:
+              - generic [ref=f1e161]: module top (
+              - generic [ref=f1e163]: input logic [3:0] a,
+              - generic [ref=f1e165]: input logic [3:0] b,
+              - generic [ref=f1e167]: output logic [3:0] y
+              - generic [ref=f1e169]: );
+              - generic [ref=f1e172]: assign y = a + b;
+              - generic [ref=f1e175]: endmodule
+        - generic [ref=f1e54]:
+          - generic [ref=f1e55]: top.sv
+          - generic [ref=f1e56]: Ln 1, Col 1
+          - generic [ref=f1e57]: "Spaces: 2"
+          - generic [ref=f1e58]: UTF-8
+          - generic [ref=f1e59]: Compiled
+      - generic [ref=f1e66]:
+        - generic [ref=f1e67]:
+          - generic [ref=f1e68]: Waveform
+          - generic [ref=f1e69]: VCD
+        - generic [ref=f1e70]:
+          - generic [ref=f1e72]:
+            - generic [ref=f1e73]: clk
+            - generic [ref=f1e75]: rst_n
+            - generic [ref=f1e77]:
+              - generic [ref=f1e78]: a
+              - generic [ref=f1e79]: "[3:0]"
+            - generic [ref=f1e80]:
+              - generic [ref=f1e81]: b
+              - generic [ref=f1e82]: "[3:0]"
+            - generic [ref=f1e83]:
+              - generic [ref=f1e84]: "y"
+              - generic [ref=f1e85]: "[3:0]"
+          - generic [ref=f1e87]: Compiled cleanly. Waveform + VCD capture will render here once the simulation engine is connected.
+        - generic [ref=f1e88]:
+          - generic [ref=f1e89]: Clean
+          - generic [ref=f1e92]:
+            - generic [ref=f1e93]:
+              - generic [ref=f1e94]: Compile
+              - generic [ref=f1e95]: →
+            - generic [ref=f1e96]: Lint
+    - generic [ref=f1e98]:
+      - button "▶ Output Verilator 5.051 · lint-only" [expanded] [ref=f1e99]:
+        - generic [ref=f1e100]: ▶
+        - text: Output
+        - generic [ref=f1e101]: Verilator 5.051 · lint-only
+      - generic [ref=f1e102]: "- V e r i l a t i o n R e p o r t: Verilator 5.051 devel rev v5.050-301-ge6cee9d54 - Verilator: Built from 0.028 MB sources in 2 modules, into 0.012 MB in 3 C++ files needing 0.000 MB - Verilator: Walltime 0.237 s (elab=0.020, cvt=0.077, bld=0.000); cpu 0.000 s on 1 threads - V e r i l a t i o n R e p o r t: Verilator 5.051 devel rev v5.050-301-ge6cee9d54 - Verilator: Built from 0.028 MB sources in 2 modules, into 0.012 MB in 3 C++ files needing 0.000 MB - Verilator: Walltime 0.237 s (elab=0.020, cvt=0.077, bld=0.000); cpu 0.000 s on 1 threads"
+  - button "Open Next.js Dev Tools" [ref=f1e109] [cursor=pointer]
+  - alert [ref=f1e180]
+  - generic [ref=f1e181]:
+    - alert
+    - alert

@@ -1,0 +1,92 @@
+- generic [active] [ref=f7e1]:
+  - banner [ref=f7e2]:
+    - navigation [ref=f7e3]:
+      - link "hdl HDL Forge" [ref=f7e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f7e5]: hdl
+        - generic [ref=f7e6]: HDL Forge
+      - generic [ref=f7e7]:
+        - link "Learn" [ref=f7e8] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f7e9] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f7e10] [cursor=pointer]:
+          - /url: /about
+      - generic: …
+  - main [ref=f7e11]:
+    - generic [ref=f7e12]:
+      - paragraph [ref=f7e13]: Certification
+      - heading "A verifiable record of the track" [level=1] [ref=f7e14]
+      - paragraph [ref=f7e15]: Finish every chapter problem set and HDL Forge issues a signed, department-branded certificate of completion — the CS50-style credential for this track.
+      - generic [ref=f7e16]:
+        - generic [ref=f7e17]:
+          - heading "Cryptographically verifiable" [level=3] [ref=f7e18]
+          - paragraph [ref=f7e19]: Each certificate is signed and can be checked against the public verification ledger.
+        - generic [ref=f7e20]:
+          - heading "Department branded" [level=3] [ref=f7e21]
+          - paragraph [ref=f7e22]: The credential carries the department's identity, built for CVs and portfolios.
+        - generic [ref=f7e23]:
+          - heading "Earned, not bought" [level=3] [ref=f7e24]
+          - paragraph [ref=f7e25]: Clear all 15 chapter problem sets and the certificate unlocks. No shortcuts.
+      - generic [ref=f7e26]:
+        - heading "Preview" [level=2] [ref=f7e27]
+        - generic [ref=f7e28]:
+          - generic [ref=f7e29]:
+            - generic [ref=f7e30]: Certificate of Completion
+            - generic [ref=f7e31]: outline state
+          - generic [ref=f7e32]:
+            - paragraph [ref=f7e33]: HDL Forge
+            - paragraph [ref=f7e34]: Certificate of Completion
+            - paragraph [ref=f7e35]: Awarded upon clearing all 15 chapter problem sets of the Verilog Digital Design track.
+            - paragraph [ref=f7e36]: Clear every problem set below, enter the name for the certificate, and claim it — the signed token renders instantly.
+          - generic [ref=f7e37]:
+            - generic [ref=f7e38]: signature · SHA-256
+            - generic [ref=f7e39]: issued by HDL Forge
+      - generic [ref=f7e40]:
+        - heading "Claim your certificate" [level=2] [ref=f7e41]
+        - paragraph [ref=f7e42]: Signed in or not, your earned receipts live with your progress — sign in to keep them across devices.
+        - generic [ref=f7e43]:
+          - generic [ref=f7e44]:
+            - generic [ref=f7e45]:
+              - paragraph [ref=f7e46]: 0 / 15 problem sets cleared
+              - paragraph [ref=f7e47]: Each cleared problem set earns a signed receipt; all 15 unlock the certificate.
+            - progressbar [ref=f7e49]
+          - generic [ref=f7e50]:
+            - textbox "Full name for the certificate" [ref=f7e51]
+            - button "Claim certificate" [disabled] [ref=f7e52]
+          - generic [ref=f7e53]:
+            - generic [ref=f7e54]: Ch 1
+            - generic [ref=f7e55]: Ch 2
+            - generic [ref=f7e56]: Ch 3
+            - generic [ref=f7e57]: Ch 4
+            - generic [ref=f7e58]: Ch 5
+            - generic [ref=f7e59]: Ch 6
+            - generic [ref=f7e60]: Ch 7
+            - generic [ref=f7e61]: Ch 8
+            - generic [ref=f7e62]: Ch 9
+            - generic [ref=f7e63]: Ch 10
+            - generic [ref=f7e64]: Ch 11
+            - generic [ref=f7e65]: Ch 12
+            - generic [ref=f7e66]: Ch 13
+            - generic [ref=f7e67]: Ch 14
+            - generic [ref=f7e68]: Ch 15
+      - generic [ref=f7e69]:
+        - heading "Verify a certificate" [level=2] [ref=f7e70]
+        - paragraph [ref=f7e71]: Paste a certificate token to confirm it was genuinely issued by the platform.
+        - generic [ref=f7e73]:
+          - textbox "Certificate token" [ref=f7e74]
+          - button "Verify" [disabled] [ref=f7e75]
+  - contentinfo [ref=f7e76]:
+    - generic [ref=f7e77]:
+      - generic [ref=f7e78]:
+        - paragraph [ref=f7e79]: HDL Forge
+        - paragraph [ref=f7e80]: Learn Verilog in the browser. Practice with instant feedback. Prove it with a certificate.
+      - generic [ref=f7e81]:
+        - link "Learn" [ref=f7e82] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f7e83] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f7e84] [cursor=pointer]:
+          - /url: /about
+        - generic [ref=f7e85]: © 2026
+  - button "Open Next.js Dev Tools" [ref=f7e91] [cursor=pointer]

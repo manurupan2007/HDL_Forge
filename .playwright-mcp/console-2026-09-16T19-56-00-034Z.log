@@ -1,0 +1,158 @@
+[     210ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[     242ms] [LOG] [HMR] connected @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[  240126ms] [ERROR] ./lib/verilator.ts:79:30
+Error: Expected '(', got ':'
+  77 | }
+  78 |
+> 79 | export function STARTER_FILES: Record<string, string> = {
+     |                              ^
+  80 |   "top.sv": `module top (
+  81 |   input  logic [3:0] a,
+  82 |   input  logic [3:0] b,
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./lib/verilator.ts [Client Component Browser]
+    ./components/workspace/Workspace.tsx [Client Component Browser]
+    ./components/workspace/Workspace.tsx [Server Component]
+    ./app/(workspace)/learn/[chapter]/lesson/[lesson]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/verilator.ts [Client Component SSR]
+    ./components/workspace/Workspace.tsx [Client Component SSR]
+    ./components/workspace/Workspace.tsx [Server Component]
+    ./app/(workspace)/learn/[chapter]/lesson/[lesson]/page.tsx [Server Component] @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:1052
+[  240185ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[  240264ms] [ERROR] ./lib/verilator.ts:79:30
+Error: Expected '(', got ':'
+  77 | }
+  78 |
+> 79 | export function STARTER_FILES: Record<string, string> = {
+     |                              ^
+  80 |   "top.sv": `module top (
+  81 |   input  logic [3:0] a,
+  82 |   input  logic [3:0] b,
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./lib/verilator.ts [Client Component Browser]
+    ./components/workspace/Workspace.tsx [Client Component Browser]
+    ./components/workspace/Workspace.tsx [Server Component]
+    ./app/(workspace)/learn/[chapter]/lesson/[lesson]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/verilator.ts [Client Component SSR]
+    ./components/workspace/Workspace.tsx [Client Component SSR]
+    ./components/workspace/Workspace.tsx [Server Component]
+    ./app/(workspace)/learn/[chapter]/lesson/[lesson]/page.tsx [Server Component] @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:1052
+[  257806ms] [ERROR] ./lib/verilator.ts:79:30
+Error: Expected '(', got ':'
+  77 | }
+  78 |
+> 79 | export function STARTER_FILES: Record<string, string> = {
+     |                              ^
+  80 |   "top.sv": `module top (
+  81 |   input  logic [3:0] a,
+  82 |   input  logic [3:0] b,
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./lib/verilator.ts [Client Component Browser]
+    ./components/workspace/Workspace.tsx [Client Component Browser]
+    ./components/workspace/Workspace.tsx [Server Component]
+    ./app/(workspace)/learn/[chapter]/lesson/[lesson]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/verilator.ts [Client Component SSR]
+    ./components/workspace/Workspace.tsx [Client Component SSR]
+    ./components/workspace/Workspace.tsx [Server Component]
+    ./app/(workspace)/learn/[chapter]/lesson/[lesson]/page.tsx [Server Component] @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:1052
+[  257868ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[  277164ms] [ERROR] ./lib/verilator.ts:79:30
+Error: Expected '(', got ':'
+  77 | }
+  78 |
+> 79 | export function STARTER_FILES: Record<string, string> = {
+     |                              ^
+  80 |   "top.sv": `module top (
+  81 |   input  logic [3:0] a,
+  82 |   input  logic [3:0] b,
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./lib/verilator.ts [Client Component Browser]
+    ./components/workspace/Workspace.tsx [Client Component Browser]
+    ./components/workspace/Workspace.tsx [Server Component]
+    ./app/(workspace)/learn/[chapter]/lesson/[lesson]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/verilator.ts [Client Component SSR]
+    ./components/workspace/Workspace.tsx [Client Component SSR]
+    ./components/workspace/Workspace.tsx [Server Component]
+    ./app/(workspace)/learn/[chapter]/lesson/[lesson]/page.tsx [Server Component] @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:1052
+[  277164ms] [ERROR] ./components/workspace/verilator.worker.ts:2:1
+Error: Export dedupeDiagnostics doesn't exist in target module
+   1 | /// <reference lib="webworker" />
+>  2 | import {
+     | ^^^^^^^
+>  3 |   DEFAULT_ARGS,
+     | ^^^^^^^^^^^^^^^
+>  4 |   dedupeDiagnostics,
+     | ^^^^^^^^^^^^^^^^^^^^
+>  5 |   isBlankSource,
+     | ^^^^^^^^^^^^^^^^
+>  6 |   parseDiagnostics,
+     | ^^^^^^^^^^^^^^^^^^^
+>  7 |   type CompileRequest,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+>  8 |   type CompileResult,
+     | ^^^^^^^^^^^^^^^^^^^^^
+>  9 | } from "@/lib/verilator";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { createVerilator } from "@/lib/vendor/verilator-wasm.mjs";
+  11 |
+  12 | const ctx = self as unknown as DedicatedWorkerGlobalScope;
+
+The export dedupeDiagnostics was not found in module [project]/lib/verilator.ts [app-client] (ecmascript).
+Did you mean to import parseDiagnostics?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component SSR:
+    ./components/workspace/verilator.worker.ts
+    ./lib/useVerilogCompiler.ts [Client Component SSR]
+    ./components/workspace/Workspace.tsx [Client Component SSR]
+    ./components/workspace/Workspace.tsx [Server Component]
+    ./app/(workspace)/learn/[chapter]/lesson/[lesson]/page.tsx [Server Component]
+
+  Client Component Browser:
+    ./components/workspace/verilator.worker.ts [Client Component Browser]
+    ./lib/useVerilogCompiler.ts [Client Component Browser]
+    ./components/workspace/Workspace.tsx [Client Component Browser]
+    ./components/workspace/Workspace.tsx [Server Component]
+    ./app/(workspace)/learn/[chapter]/lesson/[lesson]/page.tsx [Server Component] @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:1052
+[  277224ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[  342021ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[  342125ms] [LOG] [Fast Refresh] done in 25ms @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[  419827ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  420829ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  421831ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  422833ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  423837ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  428842ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  433853ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  438873ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  443901ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  448946ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  454067ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  459362ms] [ERROR] WebSocket connection to 'ws://localhost:3210/_next/hmr?id=aNJkrYRuS5nAfhm9ugK9Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16348
+[  466320ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[  466343ms] [LOG] [HMR] connected @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776

@@ -1,0 +1,11 @@
+public/monaco/vs/
+.next/
+.playwright-mcp/
+node_modules/
+*.min.js
+graphify-out/
+*.log
+*.png
+*.jpg
+*.mp4
+*.ttf

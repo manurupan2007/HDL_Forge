@@ -1,0 +1,369 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - navigation [ref=f5e3]:
+      - link "hdl HDL Forge" [ref=f5e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f5e5]: hdl
+        - generic [ref=f5e6]: HDL Forge
+      - generic [ref=f5e7]:
+        - link "Learn" [ref=f5e8] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f5e9] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f5e10] [cursor=pointer]:
+          - /url: /about
+      - generic: …
+  - main [ref=f5e11]:
+    - generic [ref=f5e12]:
+      - paragraph [ref=f5e13]: Reference
+      - heading "Glossary" [level=1] [ref=f5e14]
+      - paragraph [ref=f5e15]: Every term the full track uses, defined in one line each. Each entry names the chapter where the concept is taught in full — so a word you met in chapter 6 is always one page away in chapter 13.
+      - generic [ref=f5e16]:
+        - generic [ref=f5e17]:
+          - heading "A" [level=2] [ref=f5e18]
+          - generic [ref=f5e19]:
+            - generic [ref=f5e20]:
+              - term [ref=f5e21]: Active-low
+              - definition [ref=f5e22]: A control that does its job when it reads 0 (e.g. rst_n); the _n suffix is the convention.
+              - definition [ref=f5e23]: ch 8
+            - generic [ref=f5e24]:
+              - term [ref=f5e25]: ALU
+              - definition [ref=f5e26]: Arithmetic Logic Unit — a combinational block that computes add/sub/logic/compare operations selected by an opcode.
+              - definition [ref=f5e27]: ch 12
+            - generic [ref=f5e28]:
+              - term [ref=f5e29]: Always block
+              - definition [ref=f5e30]: "Verilog's procedural container: always @(*) re-computes like a circuit, always @(posedge clk) acts once per clock edge."
+              - definition [ref=f5e31]: ch 3
+            - generic [ref=f5e32]:
+              - term [ref=f5e33]: Assign
+              - definition [ref=f5e34]: "A continuous assignment: the output re-computes whenever any input changes — hardware, not a one-time statement."
+              - definition [ref=f5e35]: ch 1
+            - generic [ref=f5e36]:
+              - term [ref=f5e37]: Asynchronous reset
+              - definition [ref=f5e38]: A reset that acts immediately, without waiting for a clock edge.
+              - definition [ref=f5e39]: ch 8
+        - generic [ref=f5e40]:
+          - heading "B" [level=2] [ref=f5e41]
+          - generic [ref=f5e42]:
+            - generic [ref=f5e43]:
+              - term [ref=f5e44]: Baud
+              - definition [ref=f5e45]: The serial bit rate of a UART link; one baud tick is the time slot of one bit.
+              - definition [ref=f5e46]: ch 14
+            - generic [ref=f5e47]:
+              - term [ref=f5e48]: Baud tick
+              - definition [ref=f5e49]: A one-cycle pulse of baud_en that advances the UART state machine by exactly one bit time.
+              - definition [ref=f5e50]: ch 14
+            - generic [ref=f5e51]:
+              - term [ref=f5e52]: Bit
+              - definition [ref=f5e53]: "One binary wire or value: it is either 0 or 1, forever."
+              - definition [ref=f5e54]: ch 1
+            - generic [ref=f5e55]:
+              - term [ref=f5e56]: Blocking assignment
+              - definition [ref=f5e57]: "The = of procedural code: statements run strictly in order. Wrong inside clocked blocks — use nonblocking there."
+              - definition [ref=f5e58]: ch 8
+            - generic [ref=f5e59]:
+              - term [ref=f5e60]: Boot image
+              - definition [ref=f5e61]: The fixed memory contents a ROM starts with, often loaded from a text file with $readmemh.
+              - definition [ref=f5e62]: ch 13
+            - generic [ref=f5e63]:
+              - term [ref=f5e64]: Bypass
+              - definition [ref=f5e65]: A mux that shortcuts freshly-written data to a reader in the same cycle (the write-first read-during-write trick).
+              - definition [ref=f5e66]: ch 12
+        - generic [ref=f5e67]:
+          - heading "C" [level=2] [ref=f5e68]
+          - generic [ref=f5e69]:
+            - generic [ref=f5e70]:
+              - term [ref=f5e71]: Carry-out
+              - definition [ref=f5e72]: "A adder's over-bit: the bit that no longer fits the result width."
+              - definition [ref=f5e73]: ch 5
+            - generic [ref=f5e74]:
+              - term [ref=f5e75]: Case
+              - definition [ref=f5e76]: A procedural multi-way branch; it must cover every possible value (or have a default) or it silently builds a latch.
+              - definition [ref=f5e77]: ch 4
+            - generic [ref=f5e78]:
+              - term [ref=f5e79]: Casez
+              - definition [ref=f5e80]: A case variant that treats ? items as don't-care — the idiom for priority matching.
+              - definition [ref=f5e81]: ch 7
+            - generic [ref=f5e82]:
+              - term [ref=f5e83]: Clock
+              - definition [ref=f5e84]: The periodic signal that paces all sequential logic; registers only change on its edge.
+              - definition [ref=f5e85]: ch 8
+            - generic [ref=f5e86]:
+              - term [ref=f5e87]: Combinational
+              - definition [ref=f5e88]: Logic whose output is a pure function of its current inputs — no memory, no clock.
+              - definition [ref=f5e89]: ch 3
+            - generic [ref=f5e90]:
+              - term [ref=f5e91]: Concatenation
+              - definition [ref=f5e92]: "{a, b} — joining signals bit-wise into one wider value."
+              - definition [ref=f5e93]: ch 3
+            - generic [ref=f5e94]:
+              - term [ref=f5e95]: Counter
+              - definition [ref=f5e96]: A register that increments (usually with wraparound) on every enabled clock edge.
+              - definition [ref=f5e97]: ch 9
+        - generic [ref=f5e98]:
+          - heading "D" [level=2] [ref=f5e99]
+          - generic [ref=f5e100]:
+            - generic [ref=f5e101]:
+              - term [ref=f5e102]: Decoder
+              - definition [ref=f5e103]: A block that turns an n-bit code into more explicit form — one-hot lines, or an instruction into control signals.
+              - definition [ref=f5e104]: ch 7
+            - generic [ref=f5e105]:
+              - term [ref=f5e106]: Default
+              - definition [ref=f5e107]: A case's catch-all branch; also the latch-prevention tool.
+              - definition [ref=f5e108]: ch 4
+            - generic [ref=f5e109]:
+              - term [ref=f5e110]: Don't-care
+              - definition [ref=f5e111]: A bit whose value doesn't affect the outcome, written ? inside casez patterns.
+              - definition [ref=f5e112]: ch 7
+            - generic [ref=f5e113]:
+              - term [ref=f5e114]: Done
+              - definition [ref=f5e115]: This track's 'machine finished' flag — raised when the microcore reaches HALT.
+              - definition [ref=f5e116]: ch 15
+            - generic [ref=f5e117]:
+              - term [ref=f5e118]: Duty cycle
+              - definition [ref=f5e119]: The fraction of a period a clock is high; 50% means equal low and high halves.
+              - definition [ref=f5e120]: ch 9
+        - generic [ref=f5e121]:
+          - heading "E" [level=2] [ref=f5e122]
+          - generic [ref=f5e124]:
+            - term [ref=f5e125]: Enable
+            - definition [ref=f5e126]: A gate that lets the clock/state update only when en = 1.
+            - definition [ref=f5e127]: ch 8
+        - generic [ref=f5e128]:
+          - heading "F" [level=2] [ref=f5e129]
+          - generic [ref=f5e130]:
+            - generic [ref=f5e131]:
+              - term [ref=f5e132]: Flip-flop
+              - definition [ref=f5e133]: The 1-bit memory that samples its input on a clock edge and holds it until the next one.
+              - definition [ref=f5e134]: ch 8
+            - generic [ref=f5e135]:
+              - term [ref=f5e136]: FSM
+              - definition [ref=f5e137]: Finite State Machine — a state register plus next-state logic plus output logic; 'two tables and one register'.
+              - definition [ref=f5e138]: ch 11
+            - generic [ref=f5e139]:
+              - term [ref=f5e140]: Full adder
+              - definition [ref=f5e141]: Adds three bits (a, b, carry-in) and produces sum and carry-out.
+              - definition [ref=f5e142]: ch 5
+        - generic [ref=f5e143]:
+          - heading "H" [level=2] [ref=f5e144]
+          - generic [ref=f5e146]:
+            - term [ref=f5e147]: HALT
+            - definition [ref=f5e148]: In this track's microcore, the all-ones word 32'hFFFF_FFFF; it is matched as a whole word and stops the PC while raising done.
+            - definition [ref=f5e149]: ch 15
+        - generic [ref=f5e150]:
+          - heading "I" [level=2] [ref=f5e151]
+          - generic [ref=f5e152]:
+            - generic [ref=f5e153]:
+              - term [ref=f5e154]: Immediate
+              - definition [ref=f5e155]: A constant embedded inside an instruction — the I, S, B, U and J formats in RV32I.
+              - definition [ref=f5e156]: ch 15
+            - generic [ref=f5e157]:
+              - term [ref=f5e158]: ISA
+              - definition [ref=f5e159]: "Instruction Set Architecture: the full contract of encodings and effects a CPU promises its software."
+              - definition [ref=f5e160]: ch 15
+        - generic [ref=f5e161]:
+          - heading "L" [level=2] [ref=f5e162]
+          - generic [ref=f5e163]:
+            - generic [ref=f5e164]:
+              - term [ref=f5e165]: Latch
+              - definition [ref=f5e166]: "Unwanted storage created when a procedural block fails to assign an output on every path — the #1 silent-bug source for beginners."
+              - definition [ref=f5e167]: ch 4
+            - generic [ref=f5e168]:
+              - term [ref=f5e169]: LSB / MSB
+              - definition [ref=f5e170]: Least / most significant bit of a vector; UART frames send LSB first.
+              - definition [ref=f5e171]: ch 14
+            - generic [ref=f5e172]:
+              - term [ref=f5e173]: Localparam
+              - definition [ref=f5e174]: A local named constant — the right way to name FSM states instead of raw numbers.
+              - definition [ref=f5e175]: ch 11
+        - generic [ref=f5e176]:
+          - heading "M" [level=2] [ref=f5e177]
+          - generic [ref=f5e178]:
+            - generic [ref=f5e179]:
+              - term [ref=f5e180]: Mealy / Moore
+              - definition [ref=f5e181]: "The two FSM output styles: Mealy reads the inputs directly, Moore depends only on the state."
+              - definition [ref=f5e182]: ch 11
+            - generic [ref=f5e183]:
+              - term [ref=f5e184]: Metastability
+              - definition [ref=f5e185]: The undefined state of a flip-flop sampled too close to its edge — the reason external signals go through synchronizers.
+              - definition [ref=f5e186]: ch 8
+            - generic [ref=f5e187]:
+              - term [ref=f5e188]: Module
+              - definition [ref=f5e189]: "Verilog's unit of design: a named block with ports, describing one circuit."
+              - definition [ref=f5e190]: ch 1
+            - generic [ref=f5e191]:
+              - term [ref=f5e192]: Mux
+              - definition [ref=f5e193]: Multiplexer — selects one of N inputs onto the output according to a select signal.
+              - definition [ref=f5e194]: ch 4
+        - generic [ref=f5e195]:
+          - heading "N" [level=2] [ref=f5e196]
+          - generic [ref=f5e197]:
+            - generic [ref=f5e198]:
+              - term [ref=f5e199]: Netlist
+              - definition [ref=f5e200]: The gate-level circuit a synthesizer produces from your RTL.
+              - definition [ref=f5e201]: ch 1
+            - generic [ref=f5e202]:
+              - term [ref=f5e203]: Nonblocking
+              - definition [ref=f5e204]: "The <= of clocked blocks: right-hand sides are all sampled first, then committed together. The correct style for registers."
+              - definition [ref=f5e205]: ch 8
+        - generic [ref=f5e206]:
+          - heading "O" [level=2] [ref=f5e207]
+          - generic [ref=f5e208]:
+            - generic [ref=f5e209]:
+              - term [ref=f5e210]: One-hot
+              - definition [ref=f5e211]: An encoding with exactly one bit set per state — costs flip-flops, saves decode logic.
+              - definition [ref=f5e212]: ch 11
+            - generic [ref=f5e213]:
+              - term [ref=f5e214]: Opcode
+              - definition [ref=f5e215]: The instruction field that selects which operation the datapath performs.
+              - definition [ref=f5e216]: ch 12
+        - generic [ref=f5e217]:
+          - heading "P" [level=2] [ref=f5e218]
+          - generic [ref=f5e219]:
+            - generic [ref=f5e220]:
+              - term [ref=f5e221]: Part-select
+              - definition [ref=f5e222]: "Slicing a range out of a vector: fixed (x[7:4]) or variable (x[base +: 4])."
+              - definition [ref=f5e223]: ch 3
+            - generic [ref=f5e224]:
+              - term [ref=f5e225]: PC
+              - definition [ref=f5e226]: Program counter — the register holding the address of the instruction being executed.
+              - definition [ref=f5e227]: ch 15
+            - generic [ref=f5e228]:
+              - term [ref=f5e229]: Port
+              - definition [ref=f5e230]: A module's declared input or output; the module's whole interface to the outside.
+              - definition [ref=f5e231]: ch 1
+            - generic [ref=f5e232]:
+              - term [ref=f5e233]: Priority encoder
+              - definition [ref=f5e234]: Encodes the highest-priority active request line into its index, with a valid flag for 'any line active'.
+              - definition [ref=f5e235]: ch 7
+        - generic [ref=f5e236]:
+          - heading "R" [level=2] [ref=f5e237]
+          - generic [ref=f5e238]:
+            - generic [ref=f5e239]:
+              - term [ref=f5e240]: Registered
+              - definition [ref=f5e241]: Sampled on a clock edge — one cycle of latency compared with combinational logic.
+              - definition [ref=f5e242]: ch 13
+            - generic [ref=f5e243]:
+              - term [ref=f5e244]: Register file
+              - definition [ref=f5e245]: The CPU's small multiported memory of architectural registers; 2R1W means two read ports and one write port.
+              - definition [ref=f5e246]: ch 12
+            - generic [ref=f5e247]:
+              - term [ref=f5e248]: Reset
+              - definition [ref=f5e249]: The signal that forces a design into a known state; it can be synchronous (waits for the clock) or asynchronous (does not), and active-high or active-low.
+              - definition [ref=f5e250]: ch 8
+            - generic [ref=f5e251]:
+              - term [ref=f5e252]: Rotate
+              - definition [ref=f5e253]: A shift whose fallen-off bits wrap around to the opposite end instead of disappearing.
+              - definition [ref=f5e254]: ch 10
+            - generic [ref=f5e255]:
+              - term [ref=f5e256]: Reduction operator
+              - definition [ref=f5e257]: A one-operand &, |, or ^ that folds a whole vector into a single bit (e.g. ^x gives parity).
+              - definition [ref=f5e258]: ch 3
+            - generic [ref=f5e259]:
+              - term [ref=f5e260]: Ripple-carry
+              - definition [ref=f5e261]: Adder structure where each stage's carry-out feeds the next stage's carry-in.
+              - definition [ref=f5e262]: ch 5
+        - generic [ref=f5e263]:
+          - heading "S" [level=2] [ref=f5e264]
+          - generic [ref=f5e265]:
+            - generic [ref=f5e266]:
+              - term [ref=f5e267]: Sensitivity list
+              - definition [ref=f5e268]: The always block's event trigger; @(*) means 'recompute whenever anything I read changes'.
+              - definition [ref=f5e269]: ch 3
+            - generic [ref=f5e270]:
+              - term [ref=f5e271]: Sequential
+              - definition [ref=f5e272]: Logic clocked on an edge that remembers its state between edges.
+              - definition [ref=f5e273]: ch 8
+            - generic [ref=f5e274]:
+              - term [ref=f5e275]: Shift register
+              - definition [ref=f5e276]: A chain of flip-flops moving data one position per enabled clock.
+              - definition [ref=f5e277]: ch 10
+            - generic [ref=f5e278]:
+              - term [ref=f5e279]: Sign-extension
+              - definition [ref=f5e280]: "Widening a signed value by copying its sign bit into the new high positions: {{4{x[3]}}, x}."
+              - definition [ref=f5e281]: ch 6
+            - generic [ref=f5e282]:
+              - term [ref=f5e283]: Start / stop bit
+              - definition [ref=f5e284]: "UART framing: 0 before the 8 data bits, 1 after — anything else is a framing error."
+              - definition [ref=f5e285]: ch 14
+            - generic [ref=f5e286]:
+              - term [ref=f5e287]: Strobe
+              - definition [ref=f5e288]: A one-cycle pulse on an input signal.
+              - definition [ref=f5e289]: ch 9
+            - generic [ref=f5e290]:
+              - term [ref=f5e291]: Synchronizer
+              - definition [ref=f5e292]: Two flip-flops in series that contain metastability risk on signals coming from outside the clock domain.
+              - definition [ref=f5e293]: ch 8
+            - generic [ref=f5e294]:
+              - term [ref=f5e295]: Synthesis
+              - definition [ref=f5e296]: The conversion of your written rules into a real netlist of gates — the idea the whole track hangs off.
+              - definition [ref=f5e297]: ch 1
+        - generic [ref=f5e298]:
+          - heading "T" [level=2] [ref=f5e299]
+          - generic [ref=f5e300]:
+            - generic [ref=f5e301]:
+              - term [ref=f5e302]: Testbench
+              - definition [ref=f5e303]: The harness that drives inputs and checks outputs; the hidden benches grade every problem set.
+              - definition [ref=f5e304]: ch 5
+            - generic [ref=f5e305]:
+              - term [ref=f5e306]: Truth table
+              - definition [ref=f5e307]: The complete input → output map of a combinational block.
+              - definition [ref=f5e308]: ch 1
+            - generic [ref=f5e309]:
+              - term [ref=f5e310]: Two's complement
+              - definition [ref=f5e311]: Signed binary where negation is ~x + 1 and the MSB is the sign.
+              - definition [ref=f5e312]: ch 6
+        - generic [ref=f5e313]:
+          - heading "V" [level=2] [ref=f5e314]
+          - generic [ref=f5e316]:
+            - term [ref=f5e317]: Vector
+            - definition [ref=f5e318]: A named bundle of wires, e.g. wire [7:0] a — eight bits treated as one value.
+            - definition [ref=f5e319]: ch 1
+        - generic [ref=f5e320]:
+          - heading "W" [level=2] [ref=f5e321]
+          - generic [ref=f5e322]:
+            - generic [ref=f5e323]:
+              - term [ref=f5e324]: Waveform
+              - definition [ref=f5e325]: The time-plot of signal values (a VCD file) the simulator produces; the workspace shows it live.
+              - definition [ref=f5e326]: ch 1
+            - generic [ref=f5e327]:
+              - term [ref=f5e328]: Width
+              - definition [ref=f5e329]: How many bits a vector holds; mismatches cause silent truncation — the most common beginner bug in the track.
+              - definition [ref=f5e330]: ch 1
+            - generic [ref=f5e331]:
+              - term [ref=f5e332]: Write-first
+              - definition [ref=f5e333]: The read-during-write policy where the reader sees the NEW data (not the old).
+              - definition [ref=f5e334]: ch 12
+        - generic [ref=f5e335]:
+          - heading "X" [level=2] [ref=f5e336]
+          - generic [ref=f5e338]:
+            - term [ref=f5e339]: x / z
+            - definition [ref=f5e340]: Verilog's unknown and high-impedance values; x almost always means 'you forgot to drive or reset something'.
+            - definition [ref=f5e341]: ch 1
+      - paragraph [ref=f5e342]:
+        - text: Ready to use one? Jump back to the
+        - link "curriculum" [ref=f5e343] [cursor=pointer]:
+          - /url: /learn
+        - text: .
+  - contentinfo [ref=f5e344]:
+    - generic [ref=f5e345]:
+      - generic [ref=f5e346]:
+        - paragraph [ref=f5e347]: HDL Forge
+        - paragraph [ref=f5e348]: Learn Verilog in the browser. Practice with instant feedback. Prove it with a certificate.
+      - generic [ref=f5e349]:
+        - link "Learn" [ref=f5e350] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f5e351] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f5e352] [cursor=pointer]:
+          - /url: /about
+        - link "Privacy" [ref=f5e353] [cursor=pointer]:
+          - /url: /privacy
+        - link "Terms" [ref=f5e354] [cursor=pointer]:
+          - /url: /terms
+        - link "Licenses" [ref=f5e355] [cursor=pointer]:
+          - /url: /licenses
+        - link "Glossary" [ref=f5e356] [cursor=pointer]:
+          - /url: /glossary
+        - generic [ref=f5e357]: © 2026
+  - button "Open Next.js Dev Tools" [ref=f5e363] [cursor=pointer]

@@ -1,0 +1,151 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "hdl HDL Forge" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: hdl
+        - generic [ref=e6]: HDL Forge
+      - generic [ref=e7]:
+        - link "Learn" [ref=e8] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=e9] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /about
+      - generic: …
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - paragraph [ref=e17]: Open access · Browser-native
+          - heading "Learn Verilog in the browser." [level=1] [ref=e18]
+          - paragraph [ref=e19]: A guided Verilog curriculum with instant, in-browser simulation feedback — no EDA installs, no license queues. Finish each chapter's problem set to earn a verified certificate of completion.
+          - generic [ref=e20]:
+            - link "Start learning" [ref=e21] [cursor=pointer]:
+              - /url: /learn
+            - link "How it works" [ref=e22] [cursor=pointer]:
+              - /url: /about
+          - list [ref=e23]:
+            - listitem [ref=e24]: • Split-screen lessons with live waveform feedback
+            - listitem [ref=e25]: • CS50-style problem sets graded by a hidden testbench
+            - listitem [ref=e26]: • Verified, department-branded certificate
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e33]: Chapter 5 — Adder Circuits
+            - generic [ref=e34]: Reset layout
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]: Ripple-Carry Adder
+              - generic [ref=e38]:
+                - generic [ref=e39]:
+                  - paragraph [ref=e40]: Your task
+                  - paragraph [ref=e41]: Chain four full adders into a nibble adder with carry input and output.
+                - generic [ref=e42]:
+                  - paragraph [ref=e43]: Checkpoints
+                  - paragraph [ref=e44]: Lesson material is being finalized.
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - generic [ref=e47]: top.sv
+                - generic [ref=e48]: top_tb.sv
+              - generic [ref=e49]:
+                - generic [ref=e50]:
+                  - generic [ref=e51]: "1"
+                  - generic [ref=e52]: "2"
+                  - generic [ref=e53]: "3"
+                  - generic [ref=e54]: "4"
+                - generic [ref=e55]: // Design your module here.
+            - generic [ref=e60]:
+              - generic [ref=e61]: Waveform
+              - generic [ref=e62]:
+                - generic [ref=e64]:
+                  - generic [ref=e65]: clk
+                  - generic [ref=e66]: rst_n
+                  - generic [ref=e67]: a
+                  - generic [ref=e68]: b
+                  - generic [ref=e69]: "y"
+                - paragraph [ref=e71]: Run your design to render the waveform.
+          - generic [ref=e72]:
+            - generic [ref=e73]: Compile
+            - generic [ref=e74]: →
+            - generic [ref=e75]: Elaborate
+            - generic [ref=e76]: →
+            - generic [ref=e77]: Simulate
+            - generic [ref=e78]: →
+            - generic [ref=e79]: VCD
+            - generic [ref=e80]: →
+            - generic [ref=e81]: Waveform
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - heading "Split-screen micro-lessons" [level=3] [ref=e85]
+          - paragraph [ref=e86]: A theory and task pane beside a real code editor, with live waveform feedback. Bite-sized practice tasks, instant results.
+        - generic [ref=e87]:
+          - heading "CS50-style problem sets" [level=3] [ref=e88]
+          - paragraph [ref=e89]: "Each of the 15 chapters ends with an unguided problem set: design the full RTL module and testbench yourself."
+        - generic [ref=e90]:
+          - heading "Automated evaluation" [level=3] [ref=e91]
+          - paragraph [ref=e92]: Submissions run against hidden, multi-vector testbenches that check corner cases, timing, and syntax — with precise failure reports.
+        - generic [ref=e93]:
+          - heading "Verified certificate" [level=3] [ref=e94]
+          - paragraph [ref=e95]: Pass every chapter problem set and earn a verifiable, department-branded certificate of completion.
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - paragraph [ref=e100]: The track
+            - heading "Verilog Digital Design — 15 chapters" [level=2] [ref=e101]
+          - link "View full curriculum →" [ref=e102] [cursor=pointer]:
+            - /url: /learn
+        - list [ref=e103]:
+          - listitem [ref=e104]:
+            - link "Chapter 01 Synthesis Foundations Bits, truth tables, and the compile-elaborate-simulate flow that every RTL design sits on." [ref=e105] [cursor=pointer]:
+              - /url: /learn/synthesis-foundations
+              - generic [ref=e106]: Chapter 01
+              - heading "Synthesis Foundations" [level=3] [ref=e107]
+              - paragraph [ref=e108]: Bits, truth tables, and the compile-elaborate-simulate flow that every RTL design sits on.
+          - listitem [ref=e109]:
+            - link "Chapter 02 Logic Gates AND, OR, NOT, NAND, NOR, XOR, XNOR as continuous assignments and gate-level primitives." [ref=e110] [cursor=pointer]:
+              - /url: /learn/logic-gates
+              - generic [ref=e111]: Chapter 02
+              - heading "Logic Gates" [level=3] [ref=e112]
+              - paragraph [ref=e113]: AND, OR, NOT, NAND, NOR, XOR, XNOR as continuous assignments and gate-level primitives.
+          - listitem [ref=e114]:
+            - link "Chapter 03 Combinational Expressions Operators, operator precedence, vectors, and structural vs. behaviorial modelling of pure logic." [ref=e115] [cursor=pointer]:
+              - /url: /learn/combinational-expressions
+              - generic [ref=e116]: Chapter 03
+              - heading "Combinational Expressions" [level=3] [ref=e117]
+              - paragraph [ref=e118]: Operators, operator precedence, vectors, and structural vs. behaviorial modelling of pure logic.
+          - listitem [ref=e119]:
+            - link "Chapter 04 Multiplexers & Selectors MUX-2, MUX-4, wide busses, ternary operators, and MUX-based universality." [ref=e120] [cursor=pointer]:
+              - /url: /learn/multiplexers
+              - generic [ref=e121]: Chapter 04
+              - heading "Multiplexers & Selectors" [level=3] [ref=e122]
+              - paragraph [ref=e123]: MUX-2, MUX-4, wide busses, ternary operators, and MUX-based universality.
+          - listitem [ref=e124]:
+            - link "Chapter 05 Adder Circuits Half adder, full adder, ripple-carry, carry-lookahead, and parameterized adders." [ref=e125] [cursor=pointer]:
+              - /url: /learn/adders
+              - generic [ref=e126]: Chapter 05
+              - heading "Adder Circuits" [level=3] [ref=e127]
+              - paragraph [ref=e128]: Half adder, full adder, ripple-carry, carry-lookahead, and parameterized adders.
+          - listitem [ref=e129]:
+            - link "Chapter 06 Number Systems & Arithmetic Two's complement, subtractors, comparators, and sign handling in RTL." [ref=e130] [cursor=pointer]:
+              - /url: /learn/arithmetic
+              - generic [ref=e131]: Chapter 06
+              - heading "Number Systems & Arithmetic" [level=3] [ref=e132]
+              - paragraph [ref=e133]: Two's complement, subtractors, comparators, and sign handling in RTL.
+      - generic [ref=e136]:
+        - heading "Start with Chapter 1" [level=2] [ref=e137]
+        - paragraph [ref=e138]: 15 guided chapters, one problem set each, and a verified certificate when you clear the track. Free and open.
+        - link "Go to the curriculum" [ref=e139] [cursor=pointer]:
+          - /url: /learn
+  - contentinfo [ref=e140]:
+    - generic [ref=e141]:
+      - generic [ref=e142]:
+        - paragraph [ref=e143]: HDL Forge
+        - paragraph [ref=e144]: Learn Verilog in the browser. Practice with instant feedback. Prove it with a certificate.
+      - generic [ref=e145]:
+        - link "Learn" [ref=e146] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=e147] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=e148] [cursor=pointer]:
+          - /url: /about
+        - generic [ref=e149]: © 2026

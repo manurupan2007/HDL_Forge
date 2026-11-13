@@ -1,0 +1,60 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - navigation [ref=f2e3]:
+      - link "hdl HDL Forge" [ref=f2e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f2e5]: hdl
+        - generic [ref=f2e6]: HDL Forge
+      - generic [ref=f2e7]:
+        - link "Learn" [ref=f2e8] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f2e9] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f2e10] [cursor=pointer]:
+          - /url: /about
+      - generic: …
+  - main [ref=f2e11]:
+    - generic [ref=f2e12]:
+      - paragraph [ref=f2e13]: Legal
+      - heading "Terms of use" [level=1] [ref=f2e14]
+      - paragraph [ref=f2e15]: "Last updated: October 2026 · Applies to hdlforge.dev"
+      - generic [ref=f2e16]:
+        - generic [ref=f2e17]:
+          - heading "The service" [level=2] [ref=f2e18]
+          - paragraph [ref=f2e20]: "HDL Forge is a free, open-access web platform for learning Verilog hardware description: guided chapters, in-browser simulation, automatically graded problem sets, and a verifiable certificate of completion. The service is provided as-is, without warranty of any kind — the curriculum is a study aid, not a substitute for formal instruction."
+        - generic [ref=f2e21]:
+          - heading "What the certificate means" [level=2] [ref=f2e22]
+          - generic [ref=f2e23]:
+            - paragraph [ref=f2e24]: "The certificate of completion is evidence-of-coursework: a signed record that a learner cleared every chapter problem set's autograder on this platform at a stated time. It attests to performance on this track's automated exercises — nothing else."
+            - paragraph [ref=f2e25]: It is NOT an accredited academic credential. It is not a degree, not a professional licensure, not a substitute for a university course, and it confers no academic credit at any institution. HDL Forge is not accredited by any educational authority.
+            - paragraph [ref=f2e26]: "Employers reading a certificate should treat it the way CS50's certificate is treated: a credible, verifiable signal of self-driven coursework. Its signature can be checked publicly against the verification page, so its claims are auditable."
+            - paragraph [ref=f2e27]: We may revoke a certificate if it was obtained through abuse of the autograder (see below).
+        - generic [ref=f2e28]:
+          - heading "Acceptable use" [level=2] [ref=f2e29]
+          - generic [ref=f2e30]:
+            - paragraph [ref=f2e31]: "You may use the platform freely for learning, teaching, and portfolio purposes. You may not attempt to abuse the grading or simulation endpoints: no automated bulk requests, no scraping the curriculum for republication, no attempts to forge receipts or certificate tokens, and no use of the service to run workloads unrelated to learning Verilog."
+            - paragraph [ref=f2e32]: We apply per-IP rate limits to unauthenticated compute endpoints and may block clients that circumvent them.
+        - generic [ref=f2e33]:
+          - heading "Your work" [level=2] [ref=f2e34]
+          - paragraph [ref=f2e36]: Verilog source you write on the platform remains yours. We store submitted sources only for the duration of a grading run and your own iteration; we do not claim ownership of student designs. The curriculum, code, and design of the platform itself are the property of HDL Forge's maintainers.
+        - generic [ref=f2e37]:
+          - heading "Liability" [level=2] [ref=f2e38]
+          - paragraph [ref=f2e40]: To the maximum extent permitted by law, HDL Forge's maintainers are not liable for any damages arising from use of the service, including decisions made on the basis of a certificate. If a feature breaks, we fix it; that is the deal.
+  - contentinfo [ref=f2e41]:
+    - generic [ref=f2e42]:
+      - generic [ref=f2e43]:
+        - paragraph [ref=f2e44]: HDL Forge
+        - paragraph [ref=f2e45]: Learn Verilog in the browser. Practice with instant feedback. Prove it with a certificate.
+      - generic [ref=f2e46]:
+        - link "Learn" [ref=f2e47] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f2e48] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f2e49] [cursor=pointer]:
+          - /url: /about
+        - link "Privacy" [ref=f2e50] [cursor=pointer]:
+          - /url: /privacy
+        - link "Terms" [ref=f2e51] [cursor=pointer]:
+          - /url: /terms
+        - generic [ref=f2e52]: © 2026
+  - button "Open Next.js Dev Tools" [ref=f2e58] [cursor=pointer]

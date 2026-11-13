@@ -1,0 +1,90 @@
+- generic [active] [ref=f13e1]:
+  - banner [ref=f13e2]:
+    - navigation [ref=f13e3]:
+      - link "hdl HDL Forge" [ref=f13e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f13e5]: hdl
+        - generic [ref=f13e6]: HDL Forge
+      - generic [ref=f13e7]:
+        - link "Learn" [ref=f13e8] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f13e9] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f13e10] [cursor=pointer]:
+          - /url: /about
+      - generic: …
+  - main [ref=f13e11]:
+    - generic [ref=f13e12]:
+      - navigation [ref=f13e13]:
+        - link "Curriculum" [ref=f13e14] [cursor=pointer]:
+          - /url: /learn
+        - text: /
+        - generic [ref=f13e15]: Chapter 5
+      - paragraph [ref=f13e16]: Chapter 05
+      - heading "Adder Circuits" [level=1] [ref=f13e17]
+      - paragraph [ref=f13e18]: Half adder, full adder, ripple-carry, carry-lookahead, and parameterized adders.
+      - generic [ref=f13e19]:
+        - progressbar [ref=f13e21]
+        - generic [ref=f13e22]: 0% · not started · ~3 hrs
+        - generic [ref=f13e23]: Verilog-2001
+      - generic [ref=f13e24]:
+        - heading "Learning material" [level=2] [ref=f13e25]
+        - paragraph [ref=f13e26]: Start here. About 25 minutes of plain-English explanation with worked examples and paper exercises — nothing on this page is graded. Read it before the lessons.
+        - 'link "Learn Chapter 5: Adder Circuits You have spent four chapters on switches, wires, gates, and the multiplexer. On their own those are just parts on a tray. An adder is the first circuit that puts them to work and does someth… Adding one column at a time The half adder: two bits in, a sum and a carry out The full adder: now with a carry coming in Four bits in, five bits out Chaining the columns: the ripple-carry adder Carry-out is not overflow Your first testbench Any width, and the operator that does it for you Start reading" [ref=f13e27] [cursor=pointer]':
+          - /url: /learn/adders/learn
+          - generic [ref=f13e28]:
+            - generic [ref=f13e29]:
+              - 'heading "Learn Chapter 5: Adder Circuits" [level=3] [ref=f13e30]'
+              - paragraph [ref=f13e31]: You have spent four chapters on switches, wires, gates, and the multiplexer. On their own those are just parts on a tray. An adder is the first circuit that puts them to work and does someth…
+              - generic [ref=f13e32]:
+                - generic [ref=f13e33]: Adding one column at a time
+                - generic [ref=f13e34]: "The half adder: two bits in, a sum and a carry out"
+                - generic [ref=f13e35]: "The full adder: now with a carry coming in"
+                - generic [ref=f13e36]: Four bits in, five bits out
+                - generic [ref=f13e37]: "Chaining the columns: the ripple-carry adder"
+                - generic [ref=f13e38]: Carry-out is not overflow
+                - generic [ref=f13e39]: Your first testbench
+                - generic [ref=f13e40]: Any width, and the operator that does it for you
+            - generic [ref=f13e41]: Start reading
+      - generic [ref=f13e42]:
+        - heading "Lessons" [level=2] [ref=f13e43]
+        - paragraph [ref=f13e44]: Guided practice in the browser. Each one opens with a Learn tab and a Practice tab — read first, then code.
+        - generic [ref=f13e45]:
+          - link "1 Half & Full Adder Build a full adder from basic gates, then reuse it structurally; write your first minimal testbench. Open →" [ref=f13e46] [cursor=pointer]:
+            - /url: /learn/adders/lesson/half-and-full-adder
+            - generic [ref=f13e47]: "1"
+            - generic [ref=f13e48]:
+              - heading "Half & Full Adder" [level=3] [ref=f13e49]
+              - paragraph [ref=f13e50]: Build a full adder from basic gates, then reuse it structurally; write your first minimal testbench.
+            - generic [ref=f13e51]: Open →
+          - link "2 Ripple-Carry Adder Chain full adders into a nibble adder with carry input/output, then generalize to any width. Open →" [ref=f13e52] [cursor=pointer]:
+            - /url: /learn/adders/lesson/ripple-carry
+            - generic [ref=f13e53]: "2"
+            - generic [ref=f13e54]:
+              - heading "Ripple-Carry Adder" [level=3] [ref=f13e55]
+              - paragraph [ref=f13e56]: Chain full adders into a nibble adder with carry input/output, then generalize to any width.
+            - generic [ref=f13e57]: Open →
+      - generic [ref=f13e58]:
+        - heading "Problem set" [level=2] [ref=f13e59]
+        - paragraph [ref=f13e60]: Unguided, like a CS50 assignment. Design the full module and testbench, then submit for evaluation against the hidden testbench.
+        - 'link "Problem Set 5 · Nibble Adder RTL + TB Add two nibbles with carry-in so {cout, sum} = a + b + cin across all rows; ports: top(a, b, cin, sum, cout). Start" [ref=f13e61] [cursor=pointer]':
+          - /url: /learn/adders/pset/nibble-adder
+          - generic [ref=f13e62]:
+            - generic [ref=f13e63]:
+              - heading "Problem Set 5 · Nibble Adder RTL + TB" [level=3] [ref=f13e64]
+              - paragraph [ref=f13e65]: "Add two nibbles with carry-in so {cout, sum} = a + b + cin across all rows; ports: top(a, b, cin, sum, cout)."
+            - generic [ref=f13e66]: Start
+  - contentinfo [ref=f13e67]:
+    - generic [ref=f13e68]:
+      - generic [ref=f13e69]:
+        - paragraph [ref=f13e70]: HDL Forge
+        - paragraph [ref=f13e71]: Learn Verilog in the browser. Practice with instant feedback. Prove it with a certificate.
+      - generic [ref=f13e72]:
+        - link "Learn" [ref=f13e73] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f13e74] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f13e75] [cursor=pointer]:
+          - /url: /about
+        - generic [ref=f13e76]: © 2026
+  - button "Open Next.js Dev Tools" [ref=f13e82] [cursor=pointer]

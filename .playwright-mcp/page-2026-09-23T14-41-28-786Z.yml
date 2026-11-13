@@ -1,0 +1,98 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "Back to chapter 5" [ref=e5] [cursor=pointer]:
+      - /url: /learn/adders
+      - text: ← Ch 5
+    - generic [ref=e7]: Ch 5 · Adder Circuits — Ripple-Carry Adder
+    - generic [ref=e8]:
+      - generic [ref=e9]: —
+      - button "Reset layout" [ref=e10]
+      - button "Run" [ref=e11]
+  - generic [ref=e12]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: Ripple-Carry Adder
+        - generic [ref=e17]: Chapter 5 · Step 2 of 3
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - heading "Learn" [level=3] [ref=e20]
+          - paragraph [ref=e21]: "Four full adders in a chain pass each carry into the next column: a ripple-carry adder. It is slow on purpose — the critical path is the carry rippling — but it is the honest, structural way to add N bits."
+          - paragraph [ref=e22]: "Column i produces sum_i from a[i], b[i] and the carry out of column i-1. Watch the carry-out of the last column: carry-out ≠ overflow. Overflow is when the result sign is wrong (adding two positives yields negative); carry-out is just bit N leaving the bus. A `parameter N` lets the same structure serve 4-, 8- or 32-bit buses."
+          - generic [ref=e23]:
+            - code [ref=e25]: "module ripple_carry #( parameter N = 8 )( input wire [N-1:0] a, b, input wire cin, output wire [N-1:0] sum, output wire cout ); wire [N-1:0] carry; assign carry[0] = cin; genvar i; generate for (i = 0; i < N; i = i + 1) begin : cols full_adder fa ( .a(a[i]), .b(b[i]), .cin(carry[i]), .sum(sum[i]), .cout(carry[i+1]) ); end endgenerate assign cout = carry[N]; endmodule"
+            - paragraph [ref=e26]: "Named instantiation (`.port(sig)`) is the safe style — positional port order breaks when a port list changes."
+          - list [ref=e27]:
+            - listitem [ref=e28]:
+              - generic [ref=e30]: PINMISSING fires when a port is left unconnected; an open carry-out is how pins go missing in generated loops.
+            - listitem [ref=e31]:
+              - generic [ref=e33]: "For unsigned `a + b`, overflow needs a wider result to be seen at all — you cannot detect it from the adder alone without the sign context."
+            - listitem [ref=e34]:
+              - generic [ref=e36]: Retype the parameter after widening; lint will thank you for the un-truncated widths.
+        - generic [ref=e37]:
+          - heading "Objective" [level=3] [ref=e38]
+          - paragraph [ref=e39]: Chain full adders into a nibble adder with carry input/output, then generalize to any width.
+        - generic [ref=e40]:
+          - heading "Practice" [level=3] [ref=e41]
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - checkbox [ref=e44]
+              - generic [ref=e45]: "Instantiate 4 full adders and chase the carry chain by hand for `4'b0011 + 4'b0101`."
+            - listitem [ref=e46]:
+              - checkbox [ref=e47]
+              - generic [ref=e48]: Add a carry-in and carry-out port to the nibble adder.
+            - listitem [ref=e49]:
+              - checkbox [ref=e50]
+              - generic [ref=e51]: "Parameterize the adder with `parameter N = 4` and verify 8- and 16-bit widths."
+            - listitem [ref=e52]:
+              - checkbox [ref=e53]
+              - generic [ref=e54]: Detect difference between carry-out and overflow by adding two positive values whose sum exceeds the width.
+          - paragraph [ref=e55]: Tick these off in your head (or in the editor) before the task — they are the priming exercises for the graded problem set.
+        - generic [ref=e56]:
+          - heading "Your task" [level=3] [ref=e57]
+          - paragraph [ref=e58]: Chain 4 full adders into a nibble adder with carry input/output.
+          - paragraph [ref=e59]:
+            - text: Implement the design in
+            - code [ref=e60]: top.sv
+            - text: in Verilog-2001. The compiler checks your code against Verilator right in the browser as you work.
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - button "top.sv" [ref=e66]
+        - button "top_tb.sv" [ref=e67]
+      - generic [ref=e68]: Loading editor…
+      - generic [ref=e72]:
+        - generic [ref=e73]: top.sv
+        - generic [ref=e74]: Ln 1, Col 1
+        - generic [ref=e75]: "Spaces: 2"
+        - generic [ref=e76]: UTF-8
+        - generic [ref=e77]: Idle
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e86]: Waveform
+        - generic [ref=e87]: VCD
+      - generic [ref=e88]:
+        - generic [ref=e90]:
+          - generic [ref=e91]: clk
+          - generic [ref=e93]: rst_n
+          - generic [ref=e95]:
+            - generic [ref=e96]: a
+            - generic [ref=e97]: "[3:0]"
+          - generic [ref=e98]:
+            - generic [ref=e99]: b
+            - generic [ref=e100]: "[3:0]"
+          - generic [ref=e101]:
+            - generic [ref=e102]: "y"
+            - generic [ref=e103]: "[3:0]"
+        - generic [ref=e105]: Press Run to compile your design with Verilator.
+      - generic [ref=e106]:
+        - generic [ref=e107]: Idle
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - generic [ref=e112]: Compile
+            - generic [ref=e113]: →
+          - generic [ref=e114]: Lint
+  - generic [ref=e116]:
+    - button "▶ Output Verilator 5.051 · lint-only" [expanded] [ref=e117]:
+      - generic [ref=e118]: ▶
+      - text: Output
+      - generic [ref=e119]: Verilator 5.051 · lint-only
+    - generic [ref=e120]: Press Run to compile your design with Verilator.

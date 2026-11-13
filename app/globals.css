@@ -1,0 +1,312 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #0a0e14;
+  --color-canvas-subtle: #0f151e;
+  --color-canvas-inset: #0c1118;
+  --color-canvas-elevated: #141c26;
+
+  --color-border: #232b36;
+  --color-border-subtle: #1b232d;
+  --color-border-strong: #2f3a49;
+
+  --color-fg: #e7edf3;
+  --color-fg-muted: #9aa4b2;
+  --color-fg-subtle: #77818f;
+
+  --color-accent: #3b82f6;
+  --color-accent-strong: #2563eb;
+  --color-accent-bright: #60a5fa;
+
+  --color-success: #3fb950;
+  --color-warning: #d29922;
+  --color-danger: #f85149;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SFMono-Regular",
+    Menlo, Consolas, monospace;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-accent) 35%, transparent);
+}
+
+@layer base {
+  a {
+    color: var(--color-fg);
+    text-decoration: none;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+::placeholder {
+  color: var(--color-fg-subtle);
+}
+
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 6px;
+    padding: 0.5rem 0.875rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease,
+      color 0.15s ease;
+  }
+
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .btn-primary {
+    background: var(--color-accent);
+    color: #ffffff;
+  }
+
+  .btn-primary:hover:not(:disabled) {
+    background: var(--color-accent-strong);
+  }
+
+  .btn-secondary {
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-fg-muted);
+  }
+
+  .btn-secondary:hover:not(:disabled) {
+    border-color: var(--color-accent);
+    color: var(--color-fg);
+  }
+
+  .card {
+    background: var(--color-canvas-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 8px;
+  }
+
+  .card-hover {
+    transition:
+      border-color 0.15s ease,
+      background-color 0.15s ease;
+  }
+
+  .card-hover:hover {
+    border-color: var(--color-border-strong);
+  }
+
+  .input {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid var(--color-border-strong);
+    background: var(--color-canvas-inset);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    color: var(--color-fg);
+    transition: border-color 0.15s ease;
+  }
+
+  .input:focus,
+  .input:focus-visible {
+    outline: none;
+    border-color: var(--color-accent);
+  }
+
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-fg-muted);
+    letter-spacing: 0.02em;
+  }
+
+  .glass-grid {
+    background-image:
+      linear-gradient(to right, var(--color-border-subtle) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-border-subtle) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* ---------------------------------------------------------------------
+   * Certificate document (rendered on /verify/[token]). A white "sheet"
+   * on the dark page that prints cleanly on A4.
+   * ------------------------------------------------------------------- */
+  .certificate-sheet {
+    background: #ffffff;
+    color: #111827;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 8px 30px rgb(0 0 0 / 0.35);
+  }
+
+  .cert-inner {
+    border: 2.5px solid #1e3a8a;
+    padding: 44px 36px 36px;
+    text-align: center;
+  }
+
+  .cert-brand {
+    font-family: var(--font-mono), monospace;
+    font-size: 13px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #2563eb;
+  }
+
+  .cert-title {
+    margin-top: 18px;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #111827;
+  }
+
+  .cert-certifies {
+    margin-top: 22px;
+    font-size: 13px;
+    color: #6b7280;
+  }
+
+  .cert-name {
+    margin-top: 6px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #111827;
+  }
+
+  .cert-track {
+    margin-top: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #1e3a8a;
+  }
+
+  .cert-track-sub {
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+
+  .cert-issued {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #374151;
+  }
+
+  .cert-signatures {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 72px;
+  }
+
+  .cert-signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+  }
+
+  .cert-signature-squiggle {
+    width: 200px;
+    height: 56px;
+    margin-bottom: -14px;
+  }
+
+  .cert-signature-line {
+    width: 100%;
+    border-top: 1.5px solid #374151;
+    padding-top: 6px;
+  }
+
+  .cert-seal {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1.5px solid #15803d;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #15803d;
+    margin-bottom: 10px;
+  }
+
+  .cert-signature-role {
+    margin-top: 5px;
+    font-size: 11.5px;
+    color: #6b7280;
+  }
+
+  .cert-footer {
+    margin-top: 34px;
+    font-size: 11px;
+    color: #9ca3af;
+  }
+
+  .cert-token {
+    margin-top: 6px;
+    font-family: var(--font-mono), monospace;
+    font-size: 9.5px;
+    color: #6b7280;
+    word-break: break-all;
+    line-height: 1.5;
+  }
+}
+
+/* Print: only the certificate sheet, on A4. */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  main {
+    display: block;
+  }
+
+  .certificate-sheet {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .cert-inner {
+    padding: 24mm 16mm;
+  }
+}

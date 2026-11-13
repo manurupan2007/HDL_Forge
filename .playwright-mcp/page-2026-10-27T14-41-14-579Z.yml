@@ -1,0 +1,145 @@
+- generic [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - navigation [ref=f2e3]:
+      - link "hdl HDL Forge" [ref=f2e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f2e5]: hdl
+        - generic [ref=f2e6]: HDL Forge
+      - generic [ref=f2e7]:
+        - link "Learn" [ref=f2e8] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f2e9] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f2e10] [cursor=pointer]:
+          - /url: /about
+      - link "Sign in" [ref=f2e129] [cursor=pointer]:
+        - /url: /signin
+  - main [ref=f2e11]:
+    - generic [ref=f2e12]:
+      - paragraph [ref=f2e13]: Why HDL Forge
+      - heading "Verilog should be learned hands-on" [level=1] [ref=f2e14]
+      - paragraph [ref=f2e15]: Mastering Verilog should not start with multi-gigabyte EDA installations and license queues. HDL Forge is an open-access, browser-native Verilog track that merges FreeCodeCamp's split-screen micro-lessons with CS50's evaluation rigor — Verilog Digital Design in 15 chapters, ending in a verified certificate.
+      - generic [ref=f2e16]:
+        - heading "How the platform differs" [level=2] [ref=f2e17]
+        - generic [ref=f2e18]:
+          - generic [ref=f2e19]:
+            - paragraph [ref=f2e20]: HDLBits
+            - paragraph [ref=f2e21]: Excellent problem bank for gates, but no guided theory, lesson context, or completion certification.
+            - paragraph [ref=f2e22]: Adds structured curriculum and certification.
+          - generic [ref=f2e23]:
+            - paragraph [ref=f2e24]: EDA Playground
+            - paragraph [ref=f2e25]: Powerful blank-slate sandbox; no step-by-step track, autograding, or progression.
+            - paragraph [ref=f2e26]: Adds guided micro-tracks and automated grading.
+          - generic [ref=f2e27]:
+            - paragraph [ref=f2e28]: NPTEL / Coursera
+            - paragraph [ref=f2e29]: Mostly passive video; no in-browser coding or instant waveform feedback.
+            - paragraph [ref=f2e30]: Builds active, learn-by-doing practice.
+          - generic [ref=f2e31]:
+            - paragraph [ref=f2e32]: FreeCodeCamp
+            - paragraph [ref=f2e33]: Split-screen lessons are effective but target software, not RTL design.
+            - paragraph [ref=f2e34]: Retargets the model to Verilog.
+          - generic [ref=f2e35]:
+            - paragraph [ref=f2e36]: CS50x
+            - paragraph [ref=f2e37]: Rigorous problem sets and certification, built around C and the web.
+            - paragraph [ref=f2e38]: Retains the evaluation model for Verilog.
+      - generic [ref=f2e39]:
+        - heading "Architecture" [level=2] [ref=f2e40]
+        - paragraph [ref=f2e41]: A client-heavy, serverless design. The full simulation pipeline runs in the browser.
+        - list [ref=f2e43]:
+          - listitem [ref=f2e44]:
+            - generic [ref=f2e45]: Monaco Editor
+            - generic [ref=f2e46]: →
+          - listitem [ref=f2e47]:
+            - generic [ref=f2e48]: Verilator WASM
+            - generic [ref=f2e49]: →
+          - listitem [ref=f2e50]:
+            - generic [ref=f2e51]: VCD Generator
+            - generic [ref=f2e52]: →
+          - listitem [ref=f2e53]:
+            - generic [ref=f2e54]: WaveDrom SVG
+      - generic [ref=f2e55]:
+        - heading "Technology" [level=2] [ref=f2e56]
+        - generic [ref=f2e57]:
+          - generic [ref=f2e58]:
+            - paragraph [ref=f2e59]: Frontend
+            - paragraph [ref=f2e60]: React / Next.js + Tailwind CSS
+          - generic [ref=f2e61]:
+            - paragraph [ref=f2e62]: Code editor
+            - paragraph [ref=f2e63]: Monaco Editor (VS Code core)
+          - generic [ref=f2e64]:
+            - paragraph [ref=f2e65]: Simulation core
+            - paragraph [ref=f2e66]: Verilator compiled to WebAssembly
+          - generic [ref=f2e67]:
+            - paragraph [ref=f2e68]: Visualization & grading
+            - paragraph [ref=f2e69]: WaveDrom SVG + JS autograder
+      - generic [ref=f2e70]:
+        - heading "Status" [level=2] [ref=f2e71]
+        - paragraph [ref=f2e73]: "The full track is live: 15 chapters (19 guided lessons + 15 problem sets), every lesson verified against its hidden bench, the autograder running on all 15 problem sets, and signed certificates with public verification. Sign-in is optional — the curriculum, simulation, and grading all work anonymously."
+      - generic [ref=f2e74]:
+        - heading "FAQ" [level=2] [ref=f2e75]
+        - generic [ref=f2e76]:
+          - group [ref=f2e77]:
+            - generic "▸ Who is this for, and what do I need to know first?" [ref=f2e78] [cursor=pointer]:
+              - generic [ref=f2e79]: ▸
+              - text: Who is this for, and what do I need to know first?
+          - group [ref=f2e80]:
+            - generic "▸ What do I need to install?" [ref=f2e81] [cursor=pointer]:
+              - generic [ref=f2e82]: ▸
+              - text: What do I need to install?
+          - group [ref=f2e83]:
+            - generic "▸ How long does the track take?" [ref=f2e84] [cursor=pointer]:
+              - generic [ref=f2e85]: ▸
+              - text: How long does the track take?
+            - paragraph [ref=f2e130]: Early chapters are a focused hour or two; the later ones (FSMs, UART, the CPU core) honestly run four to seven hours each. A steady few weeks of evenings completes the full 15-chapter track. Your progress is saved as you go.
+          - group [ref=f2e86]:
+            - generic "▸ Does it cost anything?" [ref=f2e87] [cursor=pointer]:
+              - generic [ref=f2e88]: ▸
+              - text: Does it cost anything?
+          - group [ref=f2e89]:
+            - generic "▸ What exactly does the certificate attest?" [ref=f2e90] [cursor=pointer]:
+              - generic [ref=f2e91]: ▸
+              - text: What exactly does the certificate attest?
+          - group [ref=f2e92]:
+            - generic "▸ Do I need an account?" [ref=f2e93] [cursor=pointer]:
+              - generic [ref=f2e94]: ▸
+              - text: Do I need an account?
+          - group [ref=f2e95]:
+            - generic "▸ What if I get stuck on a problem set?" [active] [ref=f2e96] [cursor=pointer]:
+              - generic [ref=f2e97]: ▸
+              - text: What if I get stuck on a problem set?
+            - paragraph [ref=f2e132]: "Every problem set ships a built-in hint ladder: three progressively deeper hints you reveal yourself — the first unpacks the spec, the second sketches the design, the third names the exact trap. After a couple of failed submissions the first hint surfaces on its own, alongside a checklist of common pitfalls for that specific problem. Nothing is time-gated; nothing hands you the answer either."
+          - generic [ref=f2e98]:
+            - paragraph [ref=f2e99]:
+              - generic [ref=f2e100]: ▸
+              - text: Where can I report a bug or a wrong lesson?
+            - paragraph [ref=f2e101]: "Wrong grading is treated as a bug with top priority: every lesson and problem set has a verified reference solution, and the verification scripts that prove it are part of the repository."
+      - generic [ref=f2e102]:
+        - heading "Licenses & notices" [level=2] [ref=f2e103]
+        - paragraph [ref=f2e104]:
+          - text: The platform's code is MIT-licensed and the curriculum text is Creative Commons BY-NC-SA — see the
+          - link "licenses page" [ref=f2e105] [cursor=pointer]:
+            - /url: /licenses
+          - text: for the full third-party notices (Verilator, Icarus Verilog, Monaco, fonts).
+  - contentinfo [ref=f2e106]:
+    - generic [ref=f2e107]:
+      - generic [ref=f2e108]:
+        - paragraph [ref=f2e109]: HDL Forge
+        - paragraph [ref=f2e110]: Learn Verilog in the browser. Practice with instant feedback. Prove it with a certificate.
+      - generic [ref=f2e111]:
+        - link "Learn" [ref=f2e112] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f2e113] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f2e114] [cursor=pointer]:
+          - /url: /about
+        - link "Privacy" [ref=f2e115] [cursor=pointer]:
+          - /url: /privacy
+        - link "Terms" [ref=f2e116] [cursor=pointer]:
+          - /url: /terms
+        - link "Licenses" [ref=f2e117] [cursor=pointer]:
+          - /url: /licenses
+        - link "Glossary" [ref=f2e118] [cursor=pointer]:
+          - /url: /glossary
+        - generic [ref=f2e119]: © 2026
+  - button "Open Next.js Dev Tools" [ref=f2e125] [cursor=pointer]
+  - alert [ref=f2e131]

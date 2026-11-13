@@ -1,0 +1,113 @@
+- generic [active] [ref=f11e1]:
+  - generic [ref=f11e3]:
+    - banner [ref=f11e4]:
+      - link "Back to chapter 4" [ref=f11e5] [cursor=pointer]:
+        - /url: /learn/multiplexers
+        - text: ← Ch 4
+      - generic [ref=f11e7]: Ch 4 · P-Set Feature Selector
+      - generic [ref=f11e8]:
+        - generic [ref=f11e9]: —
+        - button "Reset layout" [ref=f11e10]
+        - button "Submit" [ref=f11e11]
+        - button "Lint" [ref=f11e12]
+    - generic [ref=f11e13]:
+      - generic [ref=f11e15]:
+        - generic [ref=f11e16]:
+          - generic [ref=f11e17]: Problem Set · Feature Selector
+          - generic [ref=f11e18]: Chapter 4
+        - generic [ref=f11e19]:
+          - generic [ref=f11e20]:
+            - heading "Before you start" [level=3] [ref=f11e21]
+            - paragraph [ref=f11e22]: This problem set is unguided. If anything here is unfamiliar, read the chapter's learning material first — it walks through every block you need, in plain words.
+            - 'link "Read chapter 4: Multiplexers & Selectors →" [ref=f11e23] [cursor=pointer]':
+              - /url: /learn/multiplexers/learn
+          - generic [ref=f11e24]:
+            - heading "Problem statement" [level=3] [ref=f11e25]
+            - paragraph [ref=f11e26]: "Route one of four 4-bit sources to the output: sel 00->a, 01->b, 10->c, 11->d; ports: top(a, b, c, d, sel, y). This is an unguided problem set — no step-by-step guidance; you design and verify everything yourself before submitting."
+          - generic [ref=f11e27]:
+            - heading "Deliverables" [level=3] [ref=f11e28]
+            - list [ref=f11e29]:
+              - listitem [ref=f11e30]:
+                - generic [ref=f11e31]: top.sv
+                - generic [ref=f11e32]: — the RTL module
+              - listitem [ref=f11e33]:
+                - generic [ref=f11e34]: top_tb.sv
+                - generic [ref=f11e35]: — a self-checking testbench (optional; grading always uses the hidden one)
+          - generic [ref=f11e36]:
+            - paragraph [ref=f11e37]: Evaluation
+            - paragraph [ref=f11e38]: Submissions are graded against a hidden, multi-vector testbench. Failures report the exact signal and vector that diverged from the reference design.
+          - generic [ref=f11e39]:
+            - generic [ref=f11e40]:
+              - heading "Stuck? Hint ladder" [level=3] [ref=f11e41]
+              - generic [ref=f11e42]: 0/3 revealed
+            - paragraph [ref=f11e43]: Three progressively deeper hints — you choose how much help to take. Nothing here is time-gated, and nothing gives away the testbench.
+            - button "Reveal hint 1" [ref=f11e45]
+            - generic [ref=f11e46]:
+              - paragraph [ref=f11e47]: The debugging loop that always works
+              - list [ref=f11e48]:
+                - listitem [ref=f11e49]:
+                  - generic [ref=f11e50]: "1."
+                  - generic [ref=f11e51]: Read the failing row in the Checks panel — it names the exact signal and the expected vs actual value.
+                - listitem [ref=f11e52]:
+                  - generic [ref=f11e53]: "2."
+                  - generic [ref=f11e54]: Reproduce that same input in your own top_tb.sv with a $display, and Run — your bench shows the waveform.
+                - listitem [ref=f11e55]:
+                  - generic [ref=f11e56]: "3."
+                  - generic [ref=f11e57]: "Compare on paper at the failing instant: which lane, bit, or cycle is wrong?"
+                - listitem [ref=f11e58]:
+                  - generic [ref=f11e59]: "4."
+                  - generic [ref=f11e60]: Fix, re-run YOUR bench until it passes, then Submit against the hidden one.
+          - paragraph [ref=f11e61]:
+            - text: Unfamiliar term? Every concept used in this track is defined in
+            - link "the glossary" [ref=f11e62] [cursor=pointer]:
+              - /url: /glossary
+            - text: .
+      - generic [ref=f11e66]:
+        - generic [ref=f11e67]:
+          - button "top.sv" [ref=f11e68]
+          - button "top_tb.sv" [ref=f11e69]
+        - generic [ref=f11e70]: Loading editor…
+        - generic [ref=f11e74]:
+          - generic [ref=f11e75]: top.sv
+          - generic [ref=f11e76]: Ln 1, Col 1
+          - generic [ref=f11e77]: "Spaces: 2"
+          - generic [ref=f11e78]: UTF-8
+          - generic [ref=f11e79]: Idle
+      - generic [ref=f11e86]:
+        - generic [ref=f11e87]:
+          - generic [ref=f11e88]: Waveform
+          - generic [ref=f11e89]: VCD
+        - generic [ref=f11e90]:
+          - generic [ref=f11e92]:
+            - generic [ref=f11e93]: clk
+            - generic [ref=f11e95]: rst_n
+            - generic [ref=f11e97]:
+              - generic [ref=f11e98]: a
+              - generic [ref=f11e99]: "[3:0]"
+            - generic [ref=f11e100]:
+              - generic [ref=f11e101]: b
+              - generic [ref=f11e102]: "[3:0]"
+            - generic [ref=f11e103]:
+              - generic [ref=f11e104]: "y"
+              - generic [ref=f11e105]: "[3:0]"
+          - generic [ref=f11e107]: Press Lint to check your design with Verilator.
+          - generic [ref=f11e108]:
+            - paragraph [ref=f11e109]: Evaluation
+            - paragraph [ref=f11e110]: Submissions are graded against a hidden, multi-vector testbench on the server — your top_tb.sv is replaced by the official bench before simulation. Press Submit in the header to grade.
+            - button "Run linter" [ref=f11e111]
+        - generic [ref=f11e112]:
+          - generic [ref=f11e113]: Idle
+          - generic [ref=f11e116]:
+            - generic [ref=f11e117]:
+              - generic [ref=f11e118]: Compile
+              - generic [ref=f11e119]: →
+            - generic [ref=f11e120]: Lint
+    - generic [ref=f11e122]:
+      - button "▶ Checks Output Verilator 5.051 · lint-only" [expanded] [ref=f11e123]:
+        - generic [ref=f11e124]: ▶
+        - generic [ref=f11e125]:
+          - button "Checks" [ref=f11e126]
+          - button "Output" [ref=f11e127]
+        - generic [ref=f11e128]: Verilator 5.051 · lint-only
+      - generic [ref=f11e129]: Press Lint to check your design with Verilator.
+  - button "Open Next.js Dev Tools" [ref=f11e136] [cursor=pointer]

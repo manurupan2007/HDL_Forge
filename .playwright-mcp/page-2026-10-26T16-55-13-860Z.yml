@@ -1,0 +1,65 @@
+- generic [active] [ref=f6e1]:
+  - banner [ref=f6e2]:
+    - navigation [ref=f6e3]:
+      - link "hdl HDL Forge" [ref=f6e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f6e5]: hdl
+        - generic [ref=f6e6]: HDL Forge
+      - generic [ref=f6e7]:
+        - link "Learn" [ref=f6e8] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f6e9] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f6e10] [cursor=pointer]:
+          - /url: /about
+      - generic: …
+  - main [ref=f6e11]:
+    - generic [ref=f6e12]:
+      - paragraph [ref=f6e13]: Verify
+      - heading "Certificate lookup" [level=1] [ref=f6e14]
+      - generic [ref=f6e16]:
+        - link "Share on LinkedIn" [ref=f6e17] [cursor=pointer]:
+          - /url: https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fhdlforge.dev%2Fverify%2FeyJ2IjoxLCJuYW1lIjoiQWRhIExvdmVsYWNlIiwiaXNzdWVkQXQiOiIyMDI2LTEwLTI2VDE2OjUzOjAzLjUzOFoiLCJ0cmFjayI6ImhkbGZvcmdlLXYxIiwiY2xlYXJlZCI6MTUsInRvdGFsUHNldHMiOjE1fQ.Fjvf5OkGrqGrfyKMAxGEq3wlMQibOusXozQYD46cFKc
+        - button "Copy link" [ref=f6e18]
+        - button "Print / Save PDF" [ref=f6e19]
+      - article [ref=f6e20]:
+        - generic [ref=f6e21]:
+          - paragraph [ref=f6e22]: HDL Forge
+          - heading "Certificate of Completion" [level=2] [ref=f6e23]
+          - paragraph [ref=f6e24]: This certifies that
+          - paragraph [ref=f6e25]: Ada Lovelace
+          - paragraph [ref=f6e26]: has completed
+          - paragraph [ref=f6e27]:
+            - text: Verilog Digital Design
+            - generic [ref=f6e28]: — all 15 of 15 chapter problem sets cleared
+          - paragraph [ref=f6e29]: Issued October 26, 2026
+          - generic [ref=f6e30]:
+            - paragraph [ref=f6e35]: Maintainer, HDL Forge
+            - generic [ref=f6e36]:
+              - generic [ref=f6e37]: ✓ Verified
+              - paragraph [ref=f6e38]: Signature verified
+          - paragraph [ref=f6e39]: Verify this credential at hdlforge.dev/verify — the signed token below is tamper-proof (HMAC-SHA256).
+          - paragraph [ref=f6e40]: eyJ2IjoxLCJuYW1lIjoiQWRhIExvdmVsYWNlIiwiaXNzdWVkQXQiOiIyMDI2LTEwLTI2VDE2OjUzOjAzLjUzOFoiLCJ0cmFjayI6ImhkbGZvcmdlLXYxIiwiY2xlYXJlZCI6MTUsInRvdGFsUHNldHMiOjE1fQ.Fjvf5OkGrqGrfyKMAxGEq3wlMQibOusXozQYD46cFKc
+      - paragraph [ref=f6e41]:
+        - text: This certificate is evidence-of-coursework on the HDL Forge platform — it is not an accredited academic credential. See
+        - link "the terms" [ref=f6e42] [cursor=pointer]:
+          - /url: /terms
+        - text: .
+  - contentinfo [ref=f6e43]:
+    - generic [ref=f6e44]:
+      - generic [ref=f6e45]:
+        - paragraph [ref=f6e46]: HDL Forge
+        - paragraph [ref=f6e47]: Learn Verilog in the browser. Practice with instant feedback. Prove it with a certificate.
+      - generic [ref=f6e48]:
+        - link "Learn" [ref=f6e49] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=f6e50] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=f6e51] [cursor=pointer]:
+          - /url: /about
+        - link "Privacy" [ref=f6e52] [cursor=pointer]:
+          - /url: /privacy
+        - link "Terms" [ref=f6e53] [cursor=pointer]:
+          - /url: /terms
+        - generic [ref=f6e54]: © 2026
+  - button "Open Next.js Dev Tools" [ref=f6e60] [cursor=pointer]

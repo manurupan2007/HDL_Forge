@@ -1,0 +1,134 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "hdl HDL Forge" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: hdl
+        - generic [ref=e6]: HDL Forge
+      - generic [ref=e7]:
+        - link "Learn" [ref=e8] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=e9] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /about
+      - generic: …
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - paragraph [ref=e13]: Why HDL Forge
+      - heading "Verilog should be learned hands-on" [level=1] [ref=e14]
+      - paragraph [ref=e15]: Mastering Verilog should not start with multi-gigabyte EDA installations and license queues. HDL Forge is an open-access, browser-native Verilog track that merges FreeCodeCamp's split-screen micro-lessons with CS50's evaluation rigor — Verilog Digital Design in 15 chapters, ending in a verified certificate.
+      - generic [ref=e16]:
+        - heading "How the platform differs" [level=2] [ref=e17]
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - paragraph [ref=e20]: HDLBits
+            - paragraph [ref=e21]: Excellent problem bank for gates, but no guided theory, lesson context, or completion certification.
+            - paragraph [ref=e22]: Adds structured curriculum and certification.
+          - generic [ref=e23]:
+            - paragraph [ref=e24]: EDA Playground
+            - paragraph [ref=e25]: Powerful blank-slate sandbox; no step-by-step track, autograding, or progression.
+            - paragraph [ref=e26]: Adds guided micro-tracks and automated grading.
+          - generic [ref=e27]:
+            - paragraph [ref=e28]: NPTEL / Coursera
+            - paragraph [ref=e29]: Mostly passive video; no in-browser coding or instant waveform feedback.
+            - paragraph [ref=e30]: Builds active, learn-by-doing practice.
+          - generic [ref=e31]:
+            - paragraph [ref=e32]: FreeCodeCamp
+            - paragraph [ref=e33]: Split-screen lessons are effective but target software, not RTL design.
+            - paragraph [ref=e34]: Retargets the model to Verilog.
+          - generic [ref=e35]:
+            - paragraph [ref=e36]: CS50x
+            - paragraph [ref=e37]: Rigorous problem sets and certification, built around C and the web.
+            - paragraph [ref=e38]: Retains the evaluation model for Verilog.
+      - generic [ref=e39]:
+        - heading "Architecture" [level=2] [ref=e40]
+        - paragraph [ref=e41]: A client-heavy, serverless design. The full simulation pipeline runs in the browser.
+        - list [ref=e43]:
+          - listitem [ref=e44]:
+            - generic [ref=e45]: Monaco Editor
+            - generic [ref=e46]: →
+          - listitem [ref=e47]:
+            - generic [ref=e48]: Verilator WASM
+            - generic [ref=e49]: →
+          - listitem [ref=e50]:
+            - generic [ref=e51]: VCD Generator
+            - generic [ref=e52]: →
+          - listitem [ref=e53]:
+            - generic [ref=e54]: WaveDrom SVG
+      - generic [ref=e55]:
+        - heading "Technology" [level=2] [ref=e56]
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - paragraph [ref=e59]: Frontend
+            - paragraph [ref=e60]: React / Next.js + Tailwind CSS
+          - generic [ref=e61]:
+            - paragraph [ref=e62]: Code editor
+            - paragraph [ref=e63]: Monaco Editor (VS Code core)
+          - generic [ref=e64]:
+            - paragraph [ref=e65]: Simulation core
+            - paragraph [ref=e66]: Verilator compiled to WebAssembly
+          - generic [ref=e67]:
+            - paragraph [ref=e68]: Visualization & grading
+            - paragraph [ref=e69]: WaveDrom SVG + JS autograder
+      - generic [ref=e70]:
+        - heading "Status" [level=2] [ref=e71]
+        - paragraph [ref=e73]: "The full track is live: 15 chapters (19 guided lessons + 15 problem sets), every lesson verified against its hidden bench, the autograder running on all 15 problem sets, and signed certificates with public verification. Sign-in is optional — the curriculum, simulation, and grading all work anonymously."
+      - generic [ref=e74]:
+        - heading "FAQ" [level=2] [ref=e75]
+        - generic [ref=e76]:
+          - group [ref=e77]:
+            - generic "▸ Who is this for, and what do I need to know first?" [ref=e78] [cursor=pointer]:
+              - generic [ref=e79]: ▸
+              - text: Who is this for, and what do I need to know first?
+          - group [ref=e80]:
+            - generic "▸ What do I need to install?" [ref=e81] [cursor=pointer]:
+              - generic [ref=e82]: ▸
+              - text: What do I need to install?
+          - group [ref=e83]:
+            - generic "▸ How long does the track take?" [ref=e84] [cursor=pointer]:
+              - generic [ref=e85]: ▸
+              - text: How long does the track take?
+          - group [ref=e86]:
+            - generic "▸ Does it cost anything?" [ref=e87] [cursor=pointer]:
+              - generic [ref=e88]: ▸
+              - text: Does it cost anything?
+          - group [ref=e89]:
+            - generic "▸ What exactly does the certificate attest?" [ref=e90] [cursor=pointer]:
+              - generic [ref=e91]: ▸
+              - text: What exactly does the certificate attest?
+          - group [ref=e92]:
+            - generic "▸ Do I need an account?" [ref=e93] [cursor=pointer]:
+              - generic [ref=e94]: ▸
+              - text: Do I need an account?
+          - generic [ref=e95]:
+            - paragraph [ref=e96]:
+              - generic [ref=e97]: ▸
+              - text: Where can I report a bug or a wrong lesson?
+            - paragraph [ref=e98]: "Wrong grading is treated as a bug with top priority: every lesson and problem set has a verified reference solution, and the verification scripts that prove it are part of the repository."
+      - generic [ref=e99]:
+        - heading "Licenses & notices" [level=2] [ref=e100]
+        - paragraph [ref=e101]:
+          - text: The platform's code is MIT-licensed and the curriculum text is Creative Commons BY-NC-SA — see the
+          - link "licenses page" [ref=e102] [cursor=pointer]:
+            - /url: /licenses
+          - text: for the full third-party notices (Verilator, Icarus Verilog, Monaco, fonts).
+  - contentinfo [ref=e103]:
+    - generic [ref=e104]:
+      - generic [ref=e105]:
+        - paragraph [ref=e106]: HDL Forge
+        - paragraph [ref=e107]: Learn Verilog in the browser. Practice with instant feedback. Prove it with a certificate.
+      - generic [ref=e108]:
+        - link "Learn" [ref=e109] [cursor=pointer]:
+          - /url: /learn
+        - link "Certificate" [ref=e110] [cursor=pointer]:
+          - /url: /certificate
+        - link "About" [ref=e111] [cursor=pointer]:
+          - /url: /about
+        - link "Privacy" [ref=e112] [cursor=pointer]:
+          - /url: /privacy
+        - link "Terms" [ref=e113] [cursor=pointer]:
+          - /url: /terms
+        - link "Licenses" [ref=e114] [cursor=pointer]:
+          - /url: /licenses
+        - generic [ref=e115]: © 2026

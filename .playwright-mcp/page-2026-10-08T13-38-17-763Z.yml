@@ -1,0 +1,128 @@
+- generic [active] [ref=f20e1]:
+  - generic [ref=f20e3]:
+    - banner [ref=f20e4]:
+      - link "Back to chapter 1" [ref=f20e5] [cursor=pointer]:
+        - /url: /learn/synthesis-foundations
+        - text: ← Ch 1
+      - generic [ref=f20e7]: Ch 1 · P-Set Truth-Table Synthesizer
+      - generic [ref=f20e8]:
+        - generic [ref=f20e9]: 0.05s
+        - button "Reset layout" [ref=f20e10]
+        - button "Submit" [ref=f20e11]
+        - button "Lint" [ref=f20e12]
+    - generic [ref=f20e13]:
+      - generic [ref=f20e15]:
+        - generic [ref=f20e16]:
+          - generic [ref=f20e17]: Problem Set · Truth-Table Synthesizer
+          - generic [ref=f20e18]: Chapter 1
+        - generic [ref=f20e19]:
+          - generic [ref=f20e20]:
+            - heading "Before you start" [level=3] [ref=f20e21]
+            - paragraph [ref=f20e22]: This problem set is unguided. If anything here is unfamiliar, read the chapter's learning material first — it walks through every block you need, in plain words.
+            - 'link "Read chapter 1: Synthesis Foundations →" [ref=f20e23] [cursor=pointer]':
+              - /url: /learn/synthesis-foundations/learn
+          - generic [ref=f20e24]:
+            - heading "Problem statement" [level=3] [ref=f20e25]
+            - paragraph [ref=f20e26]: "Synthesize the graded truth table: y is 4'b0001 only when a==4'b0011 AND b==4'b0001, else 4'b0000; ports: top(a, b, y). This is an unguided problem set — no step-by-step guidance, exactly like a CS50 assignment."
+          - generic [ref=f20e27]:
+            - heading "Deliverables" [level=3] [ref=f20e28]
+            - list [ref=f20e29]:
+              - listitem [ref=f20e30]:
+                - generic [ref=f20e31]: top.sv
+                - generic [ref=f20e32]: — the RTL module
+              - listitem [ref=f20e33]:
+                - generic [ref=f20e34]: top_tb.sv
+                - generic [ref=f20e35]: — a self-checking testbench (optional; grading always uses the hidden one)
+          - generic [ref=f20e36]:
+            - paragraph [ref=f20e37]: Evaluation
+            - paragraph [ref=f20e38]: Submissions are graded against a hidden, multi-vector testbench. Failures report the exact signal and vector that diverged from the reference design.
+      - generic [ref=f20e42]:
+        - generic [ref=f20e43]:
+          - button "top.sv" [ref=f20e44]
+          - button "top_tb.sv" [ref=f20e45]
+        - code [ref=f20e117]:
+          - generic [ref=f20e118]:
+            - generic [aria-hidden] [ref=f20e120]:
+              - generic [ref=f20e121]:
+                - generic [ref=f20e123] [cursor=pointer]: 
+                - generic [ref=f20e124]: "1"
+              - generic [ref=f20e125]: "2"
+              - generic [ref=f20e127]: "3"
+              - generic [ref=f20e129]: "4"
+              - generic [ref=f20e131]:
+                - generic [ref=f20e132] [cursor=pointer]: 
+                - generic [ref=f20e133]: "5"
+              - generic [ref=f20e134]:
+                - generic [ref=f20e135] [cursor=pointer]: 
+                - generic [ref=f20e136]: "6"
+              - generic [ref=f20e137]: "7"
+              - generic [ref=f20e139]: "8"
+              - generic [ref=f20e141]: "9"
+              - generic [ref=f20e143]: "10"
+            - generic [aria-hidden] [ref=f20e165]:
+              - generic [ref=f20e166]: module top (
+              - generic [ref=f20e168]: input wire [3:0] a,
+              - generic [ref=f20e170]: input wire [3:0] b,
+              - generic [ref=f20e172]: output wire [3:0] y
+              - generic [ref=f20e174]: );
+              - generic [ref=f20e176]: "// TODO: complete the function — y is 4'b0001 only when"
+              - generic [ref=f20e178]: // a == 4'b0011 AND b == 4'b0001; otherwise 4'b0000.
+              - generic [ref=f20e180]: assign y = 4'b0000;
+              - generic [ref=f20e182]: endmodule
+            - textbox "Verilog source editor" [ref=f20e186]
+        - generic [ref=f20e50]:
+          - generic [ref=f20e51]: top.sv
+          - generic [ref=f20e52]: Ln 1, Col 1
+          - generic [ref=f20e53]: "Spaces: 2"
+          - generic [ref=f20e54]: UTF-8
+          - generic [ref=f20e55]: Compiled · 2 warnings
+      - generic [ref=f20e62]:
+        - generic [ref=f20e63]:
+          - generic [ref=f20e64]: Waveform
+          - generic [ref=f20e65]: VCD
+        - generic [ref=f20e66]:
+          - generic [ref=f20e68]:
+            - generic [ref=f20e69]: clk
+            - generic [ref=f20e71]: rst_n
+            - generic [ref=f20e73]:
+              - generic [ref=f20e74]: a
+              - generic [ref=f20e75]: "[3:0]"
+            - generic [ref=f20e76]:
+              - generic [ref=f20e77]: b
+              - generic [ref=f20e78]: "[3:0]"
+            - generic [ref=f20e79]:
+              - generic [ref=f20e80]: "y"
+              - generic [ref=f20e81]: "[3:0]"
+          - generic [ref=f20e83]: Lint clean. Press Check (lessons) or Submit (p-sets) to simulate against the testbench.
+          - generic [ref=f20e84]:
+            - paragraph [ref=f20e85]: Evaluation
+            - paragraph [ref=f20e86]: Submissions are graded against a hidden, multi-vector testbench on the server — your top_tb.sv is replaced by the official bench before simulation. Press Submit in the header to grade.
+            - button "Run linter" [ref=f20e87]
+        - generic [ref=f20e88]:
+          - generic [ref=f20e89]: Clean
+          - generic [ref=f20e92]:
+            - generic [ref=f20e93]:
+              - generic [ref=f20e94]: Compile
+              - generic [ref=f20e95]: →
+            - generic [ref=f20e96]: Lint
+    - generic [ref=f20e98]:
+      - button "▶ Checks Output2 warnings Verilator 5.051 · lint-only" [expanded] [ref=f20e187]:
+        - generic [ref=f20e100]: ▶
+        - generic [ref=f20e101]:
+          - button "Checks" [ref=f20e102]
+          - button "Output2 warnings" [ref=f20e188]
+        - generic [ref=f20e104]: Verilator 5.051 · lint-only
+      - list [ref=f20e189]:
+        - listitem [ref=f20e190]:
+          - 'button "top.sv:2 Signal is not used: ''a''" [ref=f20e191]':
+            - generic [ref=f20e192]: top.sv:2
+            - generic [ref=f20e193]: "Signal is not used: 'a'"
+        - listitem [ref=f20e194]:
+          - 'button "top.sv:3 Signal is not used: ''b''" [ref=f20e195]':
+            - generic [ref=f20e196]: top.sv:3
+            - generic [ref=f20e197]: "Signal is not used: 'b'"
+  - button "Open Next.js Dev Tools" [ref=f20e112] [cursor=pointer]
+  - alert [ref=f20e198]
+  - generic [ref=f20e199]:
+    - alert
+    - alert

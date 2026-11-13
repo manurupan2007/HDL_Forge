@@ -1,0 +1,86 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e3]:
+    - banner [ref=f2e4]:
+      - link "Back to chapter 5" [ref=f2e5] [cursor=pointer]:
+        - /url: /learn/adders
+        - text: ← Ch 5
+      - generic [ref=f2e7]: Ch 5 · Adder Circuits — Ripple-Carry Adder
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]: —
+        - button "Reset layout" [ref=f2e10]
+        - button "Run" [ref=f2e11]
+    - generic [ref=f2e12]:
+      - generic [ref=f2e14]:
+        - generic [ref=f2e15]:
+          - generic [ref=f2e16]: Ripple-Carry Adder
+          - generic [ref=f2e17]: Chapter 5 · Step 2 of 3
+        - generic [ref=f2e18]:
+          - generic [ref=f2e19]:
+            - heading "Objective" [level=3] [ref=f2e20]
+            - paragraph [ref=f2e21]: Chain full adders into a nibble adder with carry input/output, then generalize to any width.
+          - generic [ref=f2e22]:
+            - heading "Practice" [level=3] [ref=f2e23]
+            - list [ref=f2e24]:
+              - listitem [ref=f2e25]:
+                - checkbox [ref=f2e26]
+                - generic [ref=f2e27]: "Instantiate 4 full adders and chase the carry chain by hand for `4'b0011 + 4'b0101`."
+              - listitem [ref=f2e28]:
+                - checkbox [ref=f2e29]
+                - generic [ref=f2e30]: Add a carry-in and carry-out port to the nibble adder.
+              - listitem [ref=f2e31]:
+                - checkbox [ref=f2e32]
+                - generic [ref=f2e33]: "Parameterize the adder with `parameter N = 4` and verify 8- and 16-bit widths."
+              - listitem [ref=f2e34]:
+                - checkbox [ref=f2e35]
+                - generic [ref=f2e36]: Detect difference between carry-out and overflow by adding two positive values whose sum exceeds the width.
+            - paragraph [ref=f2e37]: Tick these off in your head (or in the editor) before the task — they are the priming exercises for the graded problem set.
+          - generic [ref=f2e38]:
+            - heading "Your task" [level=3] [ref=f2e39]
+            - paragraph [ref=f2e40]: Chain 4 full adders into a nibble adder with carry input/output.
+            - paragraph [ref=f2e41]:
+              - text: Implement the design in
+              - code [ref=f2e42]: top.sv
+              - text: in Verilog-2001. The compiler checks your code against Verilator right in the browser as you work.
+      - generic [ref=f2e46]:
+        - generic [ref=f2e47]:
+          - button "top.sv" [ref=f2e48]
+          - button "top_tb.sv" [ref=f2e49]
+        - generic [ref=f2e50]: Loading editor…
+        - generic [ref=f2e54]:
+          - generic [ref=f2e55]: top.sv
+          - generic [ref=f2e56]: Ln 1, Col 1
+          - generic [ref=f2e57]: "Spaces: 2"
+          - generic [ref=f2e58]: UTF-8
+          - generic [ref=f2e59]: Idle
+      - generic [ref=f2e66]:
+        - generic [ref=f2e67]:
+          - generic [ref=f2e68]: Waveform
+          - generic [ref=f2e69]: VCD
+        - generic [ref=f2e70]:
+          - generic [ref=f2e72]:
+            - generic [ref=f2e73]: clk
+            - generic [ref=f2e75]: rst_n
+            - generic [ref=f2e77]:
+              - generic [ref=f2e78]: a
+              - generic [ref=f2e79]: "[3:0]"
+            - generic [ref=f2e80]:
+              - generic [ref=f2e81]: b
+              - generic [ref=f2e82]: "[3:0]"
+            - generic [ref=f2e83]:
+              - generic [ref=f2e84]: "y"
+              - generic [ref=f2e85]: "[3:0]"
+          - generic [ref=f2e87]: Press Run to compile your design with Verilator.
+        - generic [ref=f2e88]:
+          - generic [ref=f2e89]: Idle
+          - generic [ref=f2e92]:
+            - generic [ref=f2e93]:
+              - generic [ref=f2e94]: Compile
+              - generic [ref=f2e95]: →
+            - generic [ref=f2e96]: Lint
+    - generic [ref=f2e98]:
+      - button "▶ Output Verilator 5.051 · lint-only" [expanded] [ref=f2e99]:
+        - generic [ref=f2e100]: ▶
+        - text: Output
+        - generic [ref=f2e101]: Verilator 5.051 · lint-only
+      - generic [ref=f2e102]: Press Run to compile your design with Verilator.
+  - button "Open Next.js Dev Tools" [ref=f2e109] [cursor=pointer]

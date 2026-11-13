@@ -1,0 +1,44 @@
+{
+  "name": "hdl-forge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "sync-monaco": "node scripts/sync-monaco.mjs",
+    "dev": "next dev",
+    "predev": "npm run sync-monaco",
+    "prebuild": "npm run sync-monaco",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "@neondatabase/serverless": "^1.2.0",
+    "@sentry/nextjs": "^11.9.0",
+    "@upstash/ratelimit": "^2.2.0",
+    "@upstash/redis": "^1.40.0",
+    "@veriflow/iverilog-wasm": "^0.1.4",
+    "better-auth": "^1.7.7",
+    "drizzle-orm": "^0.45.3",
+    "monaco-editor": "0.52.2",
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "verilator-wasm": "^1.0.0"
+  },
+  "devDependencies": {
+    "@better-auth/cli": "^1.4.22",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.11",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}
