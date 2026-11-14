@@ -19,6 +19,15 @@ every term in the track lives at `/glossary`.
 > sign-in syncs progress to a Neon Postgres account (Better Auth); without
 > it, progress lives in localStorage on this device.
 
+## Screenshots
+
+| | |
+| --- | --- |
+| ![Landing](docs/screenshots/02-landing.png) | ![Lesson workspace](docs/screenshots/lesson-workspace.png) |
+| Landing | Lesson workspace: theory · editor · waveform, Verilator lint in-browser |
+| ![P-Set autograder](docs/screenshots/05-pset-submit-fail.png) | ![Certificate](docs/screenshots/12-cert-full.png) |
+| P-Set autograder with hint ladder | Signed, verifiable certificate |
+
 ## Routes
 
 | Route | Purpose |

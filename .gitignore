@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# internal tooling & working artifacts (kept locally, not published)
+.directory
+AGENTS.md
+.graphifyignore
+graphify-out/
+.playwright-mcp/
+/HDL Forge Project Proposal*.pdf
+/final-*.png
+docs/learn-videos/audit/
